@@ -1,0 +1,19 @@
+%h1 Visitors#index
+%p Find me in app/views/visitors/index.html.haml
+
+-# add navigation links to this file
+- if user_signed_in?
+  %li
+    = link_to 'Sign out', signout_path
+- else
+  %li
+    = link_to 'Sign in', signin_path
+- if user_signed_in?
+  %li
+    = link_to 'Users', users_path
+    = "#{User.count} registered"
+
+  %div
+    -# = Faraday.get 'http://api.beatport.co/catalog/3/search?facets[0]=fieldType:track&perPage=10&page=1&query=NightWave'
+    -#= JSON.parse(Faraday.get('https://oauth-api.beatport.com/catalog/3/tracks?facets=artistName%3ARichie+Hawtin&perPage=10&sortBy=publishDate+DESC').body)
+    -# = MultiJson.decode(access_token.get('/identity/1/person').body)
