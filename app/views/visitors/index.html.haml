@@ -17,3 +17,5 @@
     -# = Faraday.get 'http://api.beatport.co/catalog/3/search?facets[0]=fieldType:track&perPage=10&page=1&query=NightWave'
     -#= JSON.parse(Faraday.get('https://oauth-api.beatport.com/catalog/3/tracks?facets=artistName%3ARichie+Hawtin&perPage=10&sortBy=publishDate+DESC').body)
     -# = MultiJson.decode(access_token.get('/identity/1/person').body)
+    -# = session[:token].to_s + " and " + session[:secret].to_s
+    = @accesstoken.get('https://oauth-api.beatport.com/catalog/3/tracks?facets=artistName%3ARichie+Hawtin&perPage=10&sortBy=publishDate+DESC').body

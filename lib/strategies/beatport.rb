@@ -25,7 +25,10 @@ module OmniAuth
         }
       end
       extra do
-        { 'raw_info' => raw_info }
+        {
+          'raw_info' => raw_info,
+          'access_token' => access
+        }
       end
       # def request_phase
       #   #redirect client.auth_code.authorize_url({:redirect_uri => callback_url}.merge(options.authorize_params))
@@ -35,6 +38,9 @@ module OmniAuth
         @raw_info ||= MultiJson.decode(access_token.get('/identity/1/person').body)
       rescue ::Errno::ETIMEDOUT
         raise ::Timeout::Error
+      end
+      def access
+        access_token
       end
     end
   end
