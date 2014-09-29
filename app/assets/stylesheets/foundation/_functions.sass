@@ -1,0 +1,33 @@
+// *************************************
+//
+//   Functions
+//
+// *************************************
+
+// -------------------------------------
+//   Opposite Position
+//   -> Returns the opposite side
+//
+//   $side - the side to return the opposite of
+// -------------------------------------
+
+@function opposite-position($side)
+  @if $side == 'top'
+    @return 'bottom'
+  @if $side == 'bottom'
+    @return 'top'
+  @if $side == 'left'
+    @return 'right'
+  @if $side == 'right'
+    @return 'left'
+
+// -------------------------------------
+//   Rem
+//   -> Converts a pixel value into a rem
+//
+//   $size - the pixel size
+// -------------------------------------
+
+@function rem($size)
+  @return ($size / $b-fontSize) * 1rem
+

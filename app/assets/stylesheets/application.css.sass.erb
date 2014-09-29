@@ -1,0 +1,101 @@
+// *************************************
+//
+//   Aria - MVCSS v4.0.3
+//   -> Manifest
+//
+// *************************************
+
+// -------------------------------------
+//   Foundation
+// -------------------------------------
+
+@import "foundation/reset"
+@import "foundation/helpers"
+@import "foundation/config"
+@import "foundation/base"
+//@import "foundation/extends"
+@import "foundation/functions"
+@import "foundation/mixins"
+
+// -------------------------------------
+//   Components
+// -------------------------------------
+
+@import "components/bucket"
+@import "components/card"
+@import "components/cell"
+@import "components/grid"
+@import "components/row"
+@import "components/well"
+@import "components/bar"
+@import "components/button"
+@import "components/card"
+@import "components/column"
+@import "components/dropdown"
+@import "components/form"
+@import "components/list"
+@import "components/panel"
+@import "components/pillar"
+@import "components/progress"
+@import "components/split"
+@import "components/table"
+@import "components/thumb"
+
+
+// -------------------------------------
+//   Structures
+// -------------------------------------
+
+@import "structures/example"
+@import "structures/collection"
+
+// -------------------------------------
+//   Vendor
+// -------------------------------------
+
+// Third-party style imports, if needed
+
+// -------------------------------------
+//   Foundation - Tools
+// -------------------------------------
+
+@import "foundation/tools"
+
+// -------------------------------------
+//   Inbox
+// -------------------------------------
+
+.artcover
+  float: left
+
+html
+  background: -webkit-linear-gradient(90deg, #616161 10%, #9bc5c3 90%) // Chrome 10+, Saf5.1+
+  background:    -moz-linear-gradient(90deg, #616161 10%, #9bc5c3 90%) // FF3.6+
+  background:     -ms-linear-gradient(90deg, #616161 10%, #9bc5c3 90%) // IE10
+  background:      -o-linear-gradient(90deg, #616161 10%, #9bc5c3 90%) // Opera 11.10+
+  background:         linear-gradient(90deg, #616161 10%, #9bc5c3 90%) // W3C
+
+.key
+  float: right
+  text-align: right
+
+li.results
+  border-radius: 26px 26px 26px 26px
+  -moz-border-radius: 26px 26px 26px 26px
+  -webkit-border-radius: 26px 26px 26px 26px
+  border: 2px solid $c-text-invert
+
+.search-icon
+  //width: 360px
+  font-size: 2em
+  height: 80px
+  position: relative
+  padding: 8px 5px 8px 30px
+  border: 1px solid #ccc
+  background: white url(http://i.imgur.com/lFkqn.png) left center no-repeat
+  color: $c-text
+
+ul, li
+  list-style-type: none
+
+

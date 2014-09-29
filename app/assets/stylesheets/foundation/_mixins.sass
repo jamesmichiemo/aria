@@ -1,0 +1,101 @@
+// *************************************
+//
+//   Mixins
+//
+// *************************************
+
+// -------------------------------------
+//
+//   Caret
+//   -> Creates a caret (arrow) icon
+//
+// -------------------------------------
+//
+// $side - the side the caret is on
+// $size - the caret size
+// $color - the caret color
+//
+// -------------------------------------
+
+// Requires this function (replaces Compass)
+
+@function opposite-position($side)
+  @if $side == 'top'
+    @return 'bottom'
+  @if $side == 'bottom'
+    @return 'top'
+  @if $side == 'left'
+    @return 'right'
+  @if $side == 'right'
+    @return 'left'
+
+=caret($side, $size, $color)
+  $opposite: opposite-position($side)
+  border: $size solid transparent
+  border-#{$opposite}: $size solid $color
+  border-#{$side}: 0
+  bottom: auto
+  content: ''
+  display: block
+  height: 0
+  left: 50%
+  margin: (-$size) 0 0 (-$size)
+  margin-#{$side}: 0
+  position: absolute
+  right: auto
+  top: 50%
+  width: 0
+  #{$side}: -$size
+  #{$opposite}: auto
+
+// -------------------------------------
+//
+//   Keyframe Animation
+//   -> Auto-prefixed keyframe-animation
+//
+// -------------------------------------
+//
+// $name - the name of the animation
+// @content - the generated content within the mixin
+//
+// -------------------------------------
+
+=keyframe-animation($name)
+  @-webkit-keyframes #{$name}
+    @content
+  @-moz-keyframes #{$name}
+    @content
+  @keyframes #{$name}
+    @content
+
+// -------------------------------------
+//
+//   Respond-within
+//   -> Generates a media query within a range
+//
+// -------------------------------------
+//
+// $min - the initial breakpoint size
+// $max - the larger breakpoint size
+// $media - the media type ('screen', 'print', etc.)
+// @content - the generated content within the mixin
+
+=respond-within($min, $max, $media: screen)
+  @media #{$media} and (min-width: $min) and (max-width: $max)
+    @content
+
+// -------------------------------------
+//
+//   Size
+//   -> Outputs width/height properties
+//
+// -------------------------------------
+//
+// $width - the element width
+// $height - the element height
+//
+// -------------------------------------
+
+=size($width, $height: $width)
+  height: $height
+  width: $width

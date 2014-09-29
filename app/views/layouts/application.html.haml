@@ -1,0 +1,19 @@
+!!! 5
+%html{ lang: 'en' }
+%head
+  %title= "Avalon Simple Search"
+  = yield(:meta_content)
+  %meta{ :name => 'viewport', :content => 'width=device-width, initial-scale=1' }
+  = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Merriweather:400,300,700,400italic'
+  = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700'
+  = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic'
+  = stylesheet_link_tag 'application'
+  = csrf_meta_tags
+%body
+
+  = render 'layouts/shared/header'
+
+  = yield
+
+  = render 'layouts/shared/footer'
+

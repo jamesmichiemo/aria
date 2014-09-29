@@ -1,20 +1,35 @@
-%h1 Avalon Simple Search
-%p A discovery DJ tool for recommending music based on key signature.
+= render 'layouts/shared/sidebar'
 
-- if user_signed_in?
-  %li
-    = link_to 'Sign out', signout_path
-- else
-  %li
-    = link_to 'Sign in', signin_path
-- if user_signed_in?
-  %li
-    = link_to 'Users', users_path
-    = "#{User.count} registered"
-
-  %div
+%div.row.row--c
+  %div.g-b.g-b--l--11of12.g-b--center
     -# = Faraday.get 'http://api.beatport.co/catalog/3/search?facets[0]=fieldType:track&perPage=10&page=1&query=NightWave'
     -#= JSON.parse(Faraday.get('https://oauth-api.beatport.com/catalog/3/tracks?facets=artistName%3ARichie+Hawtin&perPage=10&sortBy=publishDate+DESC').body)
     -# = MultiJson.decode(access_token.get('/identity/1/person').body)
     -# = session[:token].to_s + " and " + session[:secret].to_s
-    = @accesstoken.get('https://oauth-api.beatport.com/catalog/3/tracks?facets=artistName%3ARichie+Hawtin&perPage=10&sortBy=publishDate+DESC').body
+    -# = @accesstoken.get('https://oauth-api.beatport.com/catalog/3/tracks?facets=artistName%3ABonobo&perPage=10&sortBy=publishDate+DESC').body
+    %ul
+      %li.results.pam.mbl.g-b
+        .artcover
+          = image_tag 'bonobo.png'
+        .key.g-b.g-b--l--1of12= "G"
+        .g-b.g-b--l--7of12 Bonobo
+        .mtm.g-b.g-b--l--7of12 Eyesdown - Sasha Remix
+        .mtm.g-b.g-b--l--7of12
+          = audio_tag("http://geo-samples.beatport.com/lofi/5798512.LOFI.mp3", controls: true)
+      %li.results.pam.mbl.g-b
+        .artcover
+          = image_tag 'flylo.png'
+        .key.g-b.g-b--l--1of12= "E"
+        .g-b.g-b--l--7of12 Flying Lotus
+        .mtm.g-b.g-b--l--7of12 MmmHmm
+        .mtm.g-b.g-b--l--7of12
+          = audio_tag("http://geo-samples.beatport.com/lofi/5798512.LOFI.mp3", controls: true)
+      %li.results.pam.mbl.g-b
+        .artcover
+          = image_tag 'toki.png'
+        .key.g-b.g-b--l--1of12= "A"
+        .g-b.g-b--l--7of12 Tokimonsta
+        .mtm.g-b.g-b--l--7of12 The Force
+        .mtm.g-b.g-b--l--7of12
+          = audio_tag("http://geo-samples.beatport.com/lofi/5798512.LOFI.mp3", controls: true)
+
