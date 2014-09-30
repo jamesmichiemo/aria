@@ -67,8 +67,16 @@
 // -------------------------------------
 
 .artcover
-  float: left
+  float: left 
+  img
+    margin: 0 auto
 
+@media (max-width: 1019px)
+  .artcover
+    float: none
+    img
+      display: block
+      margin: 0 auto
 html
   background: -webkit-linear-gradient(90deg, #616161 10%, #9bc5c3 90%) // Chrome 10+, Saf5.1+
   background:    -moz-linear-gradient(90deg, #616161 10%, #9bc5c3 90%) // FF3.6+
@@ -78,7 +86,7 @@ html
 
 .key
   float: right
-  text-align: right
+  text-align: center
 
 li.results
   border-radius: 26px 26px 26px 26px
