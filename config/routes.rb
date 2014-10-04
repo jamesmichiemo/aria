@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :users
-  get 'visitors/index'
-  root :to => 'visitors#index'
+  get 'tracks/index'
+  root :to => 'tracks#index'
   get '/auth/:provider/callback' => 'sessions#create'
   get '/signin' => 'sessions#new', :as => :signin
   get '/signout' => 'sessions#destroy', :as => :signout

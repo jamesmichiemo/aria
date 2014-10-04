@@ -3,12 +3,11 @@
   %ul
   - if user_signed_in?
     %li
+      = link_to 'Users', users_path
+      = "#{User.count} registered"
+  - if user_signed_in?
+    %li
       = link_to 'Sign out', signout_path
   - else
     %li
       = link_to 'Sign in', signin_path
-  - if user_signed_in?
-    %li
-      = link_to 'Users', users_path
-      = "#{User.count} registered"
-
