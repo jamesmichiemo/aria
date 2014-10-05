@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
-  resources :users
-  get 'tracks/index'
   root :to => 'tracks#index'
+  resources :users
+  match 'search', to: 'tracks#search', via: [:get, :post]
   get '/auth/:provider/callback' => 'sessions#create'
   get '/signin' => 'sessions#new', :as => :signin
   get '/signout' => 'sessions#destroy', :as => :signout
   get '/auth/failure' => 'sessions#failure'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
