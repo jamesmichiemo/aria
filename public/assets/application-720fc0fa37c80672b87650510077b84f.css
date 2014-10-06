@@ -1,0 +1,3382 @@
+/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+@import url(audioplayer.css);
+/* line 10, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_reset.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 20, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_reset.scss */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+/* line 42, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_reset.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 54, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_reset.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 64, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_reset.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+/* line 75, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_reset.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 86, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_reset.scss */
+a {
+  background: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 95, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_reset.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 106, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_reset.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 115, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_reset.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+/* line 123, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_reset.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 132, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_reset.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 141, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_reset.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 150, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_reset.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 159, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_reset.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 166, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_reset.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 170, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_reset.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+/* line 181, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_reset.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+/* line 189, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_reset.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+/* line 200, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_reset.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 208, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_reset.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 218, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_reset.scss */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 229, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_reset.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 253, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_reset.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10.
+ */
+/* line 263, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_reset.scss */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8+, and Opera
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 275, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_reset.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 290, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_reset.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 300, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_reset.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 309, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_reset.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 319, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_reset.scss */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 332, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_reset.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 344, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_reset.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 354, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_reset.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 368, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_reset.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 376, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_reset.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 387, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_reset.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9.
+ */
+/* line 396, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_reset.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 405, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_reset.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 416, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 422, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_reset.scss */
+td,
+th {
+  padding: 0;
+}
+
+/* line 67, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_helpers.sass */
+.group::after, .bucket::after, .g::after, .list--object::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* line 74, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_helpers.sass */
+.debug {
+  background-color: pink !important;
+}
+
+/* line 79, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_helpers.sass */
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* line 86, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_helpers.sass */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+}
+/* line 90, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_helpers.sass */
+.ir::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+
+/* line 8, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_base.sass */
+html {
+  background: #ecf0f1;
+  color: white;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* line 15, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_base.sass */
+body {
+  font-size: 100%;
+}
+
+/* line 22, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_base.sass */
+ul, p {
+  margin-bottom: 1.25em;
+  margin-top: 0;
+}
+
+/* line 26, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_base.sass */
+li {
+  margin-bottom: 0.625em;
+  margin-top: 0;
+  font-size: 150%;
+}
+
+/* line 33, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_base.sass */
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 0.3125em;
+  margin-top: 0;
+}
+
+/* line 43, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_base.sass */
+h1, .h1 {
+  font-size: 200%;
+}
+
+/* line 46, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_base.sass */
+h2, .h2 {
+  font-size: 150%;
+}
+
+/* line 49, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_base.sass */
+h3, .h3 {
+  font-size: 125%;
+}
+
+/* line 52, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_base.sass */
+h4, .h4 {
+  font-size: 110%;
+}
+
+/* line 61, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_base.sass */
+a {
+  border-bottom: 2px solid #ffdbeb;
+  color: #ff75b1;
+  text-decoration: none;
+}
+/* line 65, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_base.sass */
+a:hover, a:focus {
+  border-bottom-color: #ff75b1;
+  color: #ff75b1;
+}
+
+/* line 72, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_base.sass */
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+/* line 28, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_bucket.sass */
+.bucket--flag {
+  display: table;
+}
+/* line 31, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_bucket.sass */
+.bucket--flag .bucket-content {
+  vertical-align: middle;
+}
+
+/* line 40, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_bucket.sass */
+.bucket-content {
+  display: table-cell;
+  width: 10000px;
+}
+
+/* line 46, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_bucket.sass */
+.bucket-media {
+  float: left;
+  margin-right: 1.25em;
+}
+/* line 49, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_bucket.sass */
+.bucket-media > img {
+  display: block;
+  max-width: none;
+}
+
+/* line 52, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card {
+  border-radius: 3px;
+  padding: 1.25em;
+  position: relative;
+}
+
+/* line 63, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card--f {
+  padding: 0;
+}
+
+/* line 67, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card--xs {
+  padding: 0.3125em;
+}
+/* line 70, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card--xs > .card-row {
+  margin-left: -0.3125em;
+  margin-right: -0.3125em;
+}
+/* line 74, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card--xs > .card-row--n {
+  margin-top: -0.3125em;
+}
+/* line 77, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card--xs > .card-row--s {
+  margin-bottom: -0.3125em;
+}
+/* line 80, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card--xs > .card-section {
+  margin-bottom: 0.3125em;
+  padding-top: 0.3125em;
+}
+/* line 83, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card--xs > .card-section::after {
+  left: -0.3125em;
+  right: -0.3125em;
+}
+
+/* line 67, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card--s {
+  padding: 0.625em;
+}
+/* line 70, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card--s > .card-row {
+  margin-left: -0.625em;
+  margin-right: -0.625em;
+}
+/* line 74, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card--s > .card-row--n {
+  margin-top: -0.625em;
+}
+/* line 77, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card--s > .card-row--s {
+  margin-bottom: -0.625em;
+}
+/* line 80, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card--s > .card-section {
+  margin-bottom: 0.625em;
+  padding-top: 0.625em;
+}
+/* line 83, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card--s > .card-section::after {
+  left: -0.625em;
+  right: -0.625em;
+}
+
+/* line 67, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card--l {
+  padding: 2.5em;
+}
+/* line 70, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card--l > .card-row {
+  margin-left: -2.5em;
+  margin-right: -2.5em;
+}
+/* line 74, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card--l > .card-row--n {
+  margin-top: -2.5em;
+}
+/* line 77, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card--l > .card-row--s {
+  margin-bottom: -2.5em;
+}
+/* line 80, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card--l > .card-section {
+  margin-bottom: 2.5em;
+  padding-top: 2.5em;
+}
+/* line 83, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card--l > .card-section::after {
+  left: -2.5em;
+  right: -2.5em;
+}
+
+/* line 89, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card--a {
+  background: white;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* line 93, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card--b {
+  background: none;
+  border: 1px solid #dedede;
+  box-shadow: none;
+}
+
+/* line 104, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.has-card-item {
+  padding-bottom: 3.75em;
+}
+
+/* line 109, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.has-card-row {
+  overflow: hidden;
+}
+
+/* line 114, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.has-card-section {
+  padding-top: 0;
+}
+
+/* line 123, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card-item {
+  bottom: 1.25em;
+  left: 1.25em;
+  position: absolute;
+  right: 1.25em;
+}
+
+/* line 131, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card-row {
+  background: #dedede;
+  margin-bottom: 1.25em;
+  margin-left: -1.25em;
+  margin-right: -1.25em;
+  padding: 0.625em 1.25em;
+}
+
+/* line 138, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card-row--n {
+  border-bottom: 1px solid #dedede;
+  margin-top: -1.25em;
+}
+
+/* line 142, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card-row--s {
+  border-top: 1px solid #dedede;
+  margin-bottom: -1.25em;
+  margin-top: 1.25em;
+}
+
+/* line 149, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card-section {
+  margin-bottom: 1.25em;
+  padding-top: 1.25em;
+  position: relative;
+}
+/* line 153, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card-section:first-child {
+  padding: 0;
+}
+/* line 155, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card-section:last-child {
+  margin: 0;
+}
+/* line 157, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card-section:last-child::after {
+  background: none;
+}
+/* line 159, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card-section::after {
+  background: #dedede;
+  bottom: -1.25em;
+  content: "";
+  height: 1px;
+  left: -1.25em;
+  position: absolute;
+  right: -1.25em;
+}
+
+/* line 15, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_cell.sass */
+.cell {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 64em;
+  position: relative;
+}
+
+/* line 27, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_cell.sass */
+.cell--s {
+  max-width: 43.75em;
+}
+
+/* line 24, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+.g {
+  display: block;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+/* line 30, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+.g-b {
+  box-sizing: border-box;
+  float: left;
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+}
+
+/* line 44, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+.g-b--center {
+  display: block;
+  float: none;
+  margin: 0 auto;
+}
+
+/* line 57, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+.g-b--1of1 {
+  width: 100%;
+}
+
+/* line 62, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+.g-b--1of2, .g-b--2of4, .g-b--3of6, .g-b--4of8, .g-b--5of10, .g-b--6of12 {
+  width: 50%;
+}
+
+/* line 68, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+.g-b--1of3, .g-b--2of6, .g-b--4of12 {
+  width: 33.333%;
+}
+
+/* line 70, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+.g-b--2of3, .g-b--4of6, .g-b--8of12 {
+  width: 66.666%;
+}
+
+/* line 76, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+.g-b--1of4, .g-b--2of8, .g-b--3of12 {
+  width: 25%;
+}
+
+/* line 80, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+.g-b--3of4, .g-b--6of8, .g-b--9of12 {
+  width: 75%;
+}
+
+/* line 86, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+.g-b--1of5, .g-b--2of10 {
+  width: 20%;
+}
+
+/* line 88, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+.g-b--2of5, .g-b--4of10 {
+  width: 40%;
+}
+
+/* line 90, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+.g-b--3of5, .g-b--6of10 {
+  width: 60%;
+}
+
+/* line 92, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+.g-b--4of5, .g-b--8of10 {
+  width: 80%;
+}
+
+/* line 98, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+.g-b--1of6, .g-b--2of12 {
+  width: 16.666%;
+}
+
+/* line 106, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+.g-b--5of6, .g-b--10of12 {
+  width: 83.333%;
+}
+
+/* line 112, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+.g-b--1of8 {
+  width: 12.5%;
+}
+
+/* line 116, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+.g-b--3of8 {
+  width: 37.5%;
+}
+
+/* line 120, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+.g-b--5of8 {
+  width: 62.5%;
+}
+
+/* line 124, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+.g-b--7of8 {
+  width: 87.5%;
+}
+
+/* line 130, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+.g-b--1of10 {
+  width: 10%;
+}
+
+/* line 134, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+.g-b--3of10 {
+  width: 30%;
+}
+
+/* line 142, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+.g-b--7of10 {
+  width: 70%;
+}
+
+/* line 146, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+.g-b--9of10 {
+  width: 90%;
+}
+
+/* line 152, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+.g-b--1of12 {
+  width: 8.333%;
+}
+
+/* line 160, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+.g-b--5of12 {
+  width: 41.666%;
+}
+
+/* line 164, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+.g-b--7of12 {
+  width: 58.333%;
+}
+
+/* line 172, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+.g-b--11of12 {
+  width: 91.666%;
+}
+
+@media screen and (min-width: 30em) {
+  /* line 57, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--s--1of1 {
+    width: 100%;
+  }
+
+  /* line 62, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--s--1of2, .g-b--s--2of4, .g-b--s--3of6, .g-b--s--4of8, .g-b--s--5of10, .g-b--s--6of12 {
+    width: 50%;
+  }
+
+  /* line 68, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--s--1of3, .g-b--s--2of6, .g-b--s--4of12 {
+    width: 33.333%;
+  }
+
+  /* line 70, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--s--2of3, .g-b--s--4of6, .g-b--s--8of12 {
+    width: 66.666%;
+  }
+
+  /* line 76, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--s--1of4, .g-b--s--2of8, .g-b--s--3of12 {
+    width: 25%;
+  }
+
+  /* line 80, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--s--3of4, .g-b--s--6of8, .g-b--s--9of12 {
+    width: 75%;
+  }
+
+  /* line 86, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--s--1of5, .g-b--s--2of10 {
+    width: 20%;
+  }
+
+  /* line 88, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--s--2of5, .g-b--s--4of10 {
+    width: 40%;
+  }
+
+  /* line 90, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--s--3of5, .g-b--s--6of10 {
+    width: 60%;
+  }
+
+  /* line 92, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--s--4of5, .g-b--s--8of10 {
+    width: 80%;
+  }
+
+  /* line 98, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--s--1of6, .g-b--s--2of12 {
+    width: 16.666%;
+  }
+
+  /* line 106, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--s--5of6, .g-b--s--10of12 {
+    width: 83.333%;
+  }
+
+  /* line 112, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--s--1of8 {
+    width: 12.5%;
+  }
+
+  /* line 116, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--s--3of8 {
+    width: 37.5%;
+  }
+
+  /* line 120, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--s--5of8 {
+    width: 62.5%;
+  }
+
+  /* line 124, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--s--7of8 {
+    width: 87.5%;
+  }
+
+  /* line 130, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--s--1of10 {
+    width: 10%;
+  }
+
+  /* line 134, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--s--3of10 {
+    width: 30%;
+  }
+
+  /* line 142, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--s--7of10 {
+    width: 70%;
+  }
+
+  /* line 146, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--s--9of10 {
+    width: 90%;
+  }
+
+  /* line 152, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--s--1of12 {
+    width: 8.333%;
+  }
+
+  /* line 160, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--s--5of12 {
+    width: 41.666%;
+  }
+
+  /* line 164, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--s--7of12 {
+    width: 58.333%;
+  }
+
+  /* line 172, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--s--11of12 {
+    width: 91.666%;
+  }
+}
+@media screen and (min-width: 50em) {
+  /* line 57, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--m--1of1 {
+    width: 100%;
+  }
+
+  /* line 62, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--m--1of2, .g-b--m--2of4, .g-b--m--3of6, .g-b--m--4of8, .g-b--m--5of10, .g-b--m--6of12 {
+    width: 50%;
+  }
+
+  /* line 68, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--m--1of3, .g-b--m--2of6, .g-b--m--4of12 {
+    width: 33.333%;
+  }
+
+  /* line 70, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--m--2of3, .g-b--m--4of6, .g-b--m--8of12 {
+    width: 66.666%;
+  }
+
+  /* line 76, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--m--1of4, .g-b--m--2of8, .g-b--m--3of12 {
+    width: 25%;
+  }
+
+  /* line 80, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--m--3of4, .g-b--m--6of8, .g-b--m--9of12 {
+    width: 75%;
+  }
+
+  /* line 86, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--m--1of5, .g-b--m--2of10 {
+    width: 20%;
+  }
+
+  /* line 88, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--m--2of5, .g-b--m--4of10 {
+    width: 40%;
+  }
+
+  /* line 90, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--m--3of5, .g-b--m--6of10 {
+    width: 60%;
+  }
+
+  /* line 92, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--m--4of5, .g-b--m--8of10 {
+    width: 80%;
+  }
+
+  /* line 98, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--m--1of6, .g-b--m--2of12 {
+    width: 16.666%;
+  }
+
+  /* line 106, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--m--5of6, .g-b--m--10of12 {
+    width: 83.333%;
+  }
+
+  /* line 112, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--m--1of8 {
+    width: 12.5%;
+  }
+
+  /* line 116, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--m--3of8 {
+    width: 37.5%;
+  }
+
+  /* line 120, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--m--5of8 {
+    width: 62.5%;
+  }
+
+  /* line 124, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--m--7of8 {
+    width: 87.5%;
+  }
+
+  /* line 130, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--m--1of10 {
+    width: 10%;
+  }
+
+  /* line 134, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--m--3of10 {
+    width: 30%;
+  }
+
+  /* line 142, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--m--7of10 {
+    width: 70%;
+  }
+
+  /* line 146, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--m--9of10 {
+    width: 90%;
+  }
+
+  /* line 152, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--m--1of12 {
+    width: 8.333%;
+  }
+
+  /* line 160, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--m--5of12 {
+    width: 41.666%;
+  }
+
+  /* line 164, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--m--7of12 {
+    width: 58.333%;
+  }
+
+  /* line 172, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--m--11of12 {
+    width: 91.666%;
+  }
+}
+@media screen and (min-width: 64em) {
+  /* line 57, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--l--1of1 {
+    width: 100%;
+  }
+
+  /* line 62, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--l--1of2, .g-b--l--2of4, .g-b--l--3of6, .g-b--l--4of8, .g-b--l--5of10, .g-b--l--6of12 {
+    width: 50%;
+  }
+
+  /* line 68, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--l--1of3, .g-b--l--2of6, .g-b--l--4of12 {
+    width: 33.333%;
+  }
+
+  /* line 70, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--l--2of3, .g-b--l--4of6, .g-b--l--8of12 {
+    width: 66.666%;
+  }
+
+  /* line 76, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--l--1of4, .g-b--l--2of8, .g-b--l--3of12 {
+    width: 25%;
+  }
+
+  /* line 80, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--l--3of4, .g-b--l--6of8, .g-b--l--9of12 {
+    width: 75%;
+  }
+
+  /* line 86, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--l--1of5, .g-b--l--2of10 {
+    width: 20%;
+  }
+
+  /* line 88, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--l--2of5, .g-b--l--4of10 {
+    width: 40%;
+  }
+
+  /* line 90, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--l--3of5, .g-b--l--6of10 {
+    width: 60%;
+  }
+
+  /* line 92, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--l--4of5, .g-b--l--8of10 {
+    width: 80%;
+  }
+
+  /* line 98, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--l--1of6, .g-b--l--2of12 {
+    width: 16.666%;
+  }
+
+  /* line 106, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--l--5of6, .g-b--l--10of12 {
+    width: 83.333%;
+  }
+
+  /* line 112, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--l--1of8 {
+    width: 12.5%;
+  }
+
+  /* line 116, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--l--3of8 {
+    width: 37.5%;
+  }
+
+  /* line 120, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--l--5of8 {
+    width: 62.5%;
+  }
+
+  /* line 124, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--l--7of8 {
+    width: 87.5%;
+  }
+
+  /* line 130, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--l--1of10 {
+    width: 10%;
+  }
+
+  /* line 134, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--l--3of10 {
+    width: 30%;
+  }
+
+  /* line 142, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--l--7of10 {
+    width: 70%;
+  }
+
+  /* line 146, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--l--9of10 {
+    width: 90%;
+  }
+
+  /* line 152, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--l--1of12 {
+    width: 8.333%;
+  }
+
+  /* line 160, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--l--5of12 {
+    width: 41.666%;
+  }
+
+  /* line 164, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--l--7of12 {
+    width: 58.333%;
+  }
+
+  /* line 172, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_grid.sass */
+  .g-b--l--11of12 {
+    width: 91.666%;
+  }
+}
+/* line 15, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_row.sass */
+.row {
+  overflow: hidden;
+  padding: 0 1.25em;
+}
+
+/* line 25, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_row.sass */
+.row--a {
+  background: #ff4294;
+}
+
+/* line 28, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_row.sass */
+.row--b {
+  background: #ff75b1;
+}
+
+/* line 15, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_well.sass */
+.well {
+  margin-bottom: 1.25em;
+  margin-top: 1.25em;
+}
+
+/* line 25, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_well.sass */
+.well--l {
+  margin-bottom: 2.5em;
+  margin-top: 2.5em;
+}
+
+/* line 34, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_bar.sass */
+.bar {
+  background: #333333;
+  box-sizing: border-box;
+  height: 50px;
+  padding: 0 1.25em;
+  position: absolute;
+  width: 100%;
+}
+
+/* line 48, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_bar.sass */
+.bar--fixed {
+  position: fixed;
+}
+
+/* line 53, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_bar.sass */
+.bar--n, .bar--header {
+  top: 0;
+}
+
+/* line 56, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_bar.sass */
+.bar--s, .bar--footer {
+  bottom: 0;
+}
+
+/* line 59, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_bar.sass */
+.bar--e, .bar--header, .bar--footer {
+  right: 0;
+}
+
+/* line 62, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_bar.sass */
+.bar--w, .bar--header, .bar--footer {
+  left: 0;
+}
+
+/* line 81, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_bar.sass */
+.has-bar {
+  padding-top: 50px;
+  position: relative;
+}
+
+/* line 85, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_bar.sass */
+.has-bar--content {
+  margin-top: 1.25em;
+}
+
+/* line 46, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_button.sass */
+.btn {
+  border-radius: 3px;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 100%;
+  line-height: 2.5;
+  padding: 0 2.5em;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* line 63, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_button.sass */
+.btn--a {
+  background: #4e4e5b;
+  color: white;
+}
+/* line 66, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_button.sass */
+.btn--a:hover, .btn--a:focus, .btn--a:active {
+  background: #666676;
+  color: white;
+}
+
+/* line 72, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_button.sass */
+.btn--b {
+  background: #c3c3cc;
+  color: #4e4e5b;
+}
+/* line 75, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_button.sass */
+.btn--b:hover, .btn--b:focus, .btn--b:active {
+  background: #d1d1d7;
+  color: #4e4e5b;
+}
+
+/* line 83, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_button.sass */
+.btn--s {
+  font-size: 90%;
+  padding: 0 1.25em;
+}
+
+/* line 87, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_button.sass */
+.btn--l {
+  font-size: 110%;
+  padding: 0 5em;
+}
+
+/* line 52, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card {
+  border-radius: 3px;
+  padding: 1.25em;
+  position: relative;
+}
+
+/* line 63, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card--f {
+  padding: 0;
+}
+
+/* line 67, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card--xs {
+  padding: 0.3125em;
+}
+/* line 70, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card--xs > .card-row {
+  margin-left: -0.3125em;
+  margin-right: -0.3125em;
+}
+/* line 74, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card--xs > .card-row--n {
+  margin-top: -0.3125em;
+}
+/* line 77, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card--xs > .card-row--s {
+  margin-bottom: -0.3125em;
+}
+/* line 80, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card--xs > .card-section {
+  margin-bottom: 0.3125em;
+  padding-top: 0.3125em;
+}
+/* line 83, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card--xs > .card-section::after {
+  left: -0.3125em;
+  right: -0.3125em;
+}
+
+/* line 67, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card--s {
+  padding: 0.625em;
+}
+/* line 70, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card--s > .card-row {
+  margin-left: -0.625em;
+  margin-right: -0.625em;
+}
+/* line 74, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card--s > .card-row--n {
+  margin-top: -0.625em;
+}
+/* line 77, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card--s > .card-row--s {
+  margin-bottom: -0.625em;
+}
+/* line 80, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card--s > .card-section {
+  margin-bottom: 0.625em;
+  padding-top: 0.625em;
+}
+/* line 83, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card--s > .card-section::after {
+  left: -0.625em;
+  right: -0.625em;
+}
+
+/* line 67, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card--l {
+  padding: 2.5em;
+}
+/* line 70, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card--l > .card-row {
+  margin-left: -2.5em;
+  margin-right: -2.5em;
+}
+/* line 74, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card--l > .card-row--n {
+  margin-top: -2.5em;
+}
+/* line 77, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card--l > .card-row--s {
+  margin-bottom: -2.5em;
+}
+/* line 80, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card--l > .card-section {
+  margin-bottom: 2.5em;
+  padding-top: 2.5em;
+}
+/* line 83, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card--l > .card-section::after {
+  left: -2.5em;
+  right: -2.5em;
+}
+
+/* line 89, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card--a {
+  background: white;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* line 93, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card--b {
+  background: none;
+  border: 1px solid #dedede;
+  box-shadow: none;
+}
+
+/* line 104, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.has-card-item {
+  padding-bottom: 3.75em;
+}
+
+/* line 109, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.has-card-row {
+  overflow: hidden;
+}
+
+/* line 114, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.has-card-section {
+  padding-top: 0;
+}
+
+/* line 123, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card-item {
+  bottom: 1.25em;
+  left: 1.25em;
+  position: absolute;
+  right: 1.25em;
+}
+
+/* line 131, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card-row {
+  background: #dedede;
+  margin-bottom: 1.25em;
+  margin-left: -1.25em;
+  margin-right: -1.25em;
+  padding: 0.625em 1.25em;
+}
+
+/* line 138, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card-row--n {
+  border-bottom: 1px solid #dedede;
+  margin-top: -1.25em;
+}
+
+/* line 142, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card-row--s {
+  border-top: 1px solid #dedede;
+  margin-bottom: -1.25em;
+  margin-top: 1.25em;
+}
+
+/* line 149, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card-section {
+  margin-bottom: 1.25em;
+  padding-top: 1.25em;
+  position: relative;
+}
+/* line 153, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card-section:first-child {
+  padding: 0;
+}
+/* line 155, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card-section:last-child {
+  margin: 0;
+}
+/* line 157, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card-section:last-child::after {
+  background: none;
+}
+/* line 159, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_card.sass */
+.card-section::after {
+  background: #dedede;
+  bottom: -1.25em;
+  content: "";
+  height: 1px;
+  left: -1.25em;
+  position: absolute;
+  right: -1.25em;
+}
+
+/* line 27, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_column.sass */
+.column {
+  column-gap: 1.25em;
+}
+
+/* line 36, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_column.sass */
+.column--1 {
+  columns: 1;
+}
+
+/* line 36, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_column.sass */
+.column--2 {
+  columns: 2;
+}
+
+/* line 36, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_column.sass */
+.column--3 {
+  columns: 3;
+}
+
+/* line 36, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_column.sass */
+.column--4 {
+  columns: 4;
+}
+
+@media screen and (min-width: 30em) {
+  /* line 36, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_column.sass */
+  .column--s--1 {
+    columns: 1;
+  }
+
+  /* line 36, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_column.sass */
+  .column--s--2 {
+    columns: 2;
+  }
+
+  /* line 36, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_column.sass */
+  .column--s--3 {
+    columns: 3;
+  }
+
+  /* line 36, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_column.sass */
+  .column--s--4 {
+    columns: 4;
+  }
+}
+@media screen and (min-width: 50em) {
+  /* line 36, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_column.sass */
+  .column--m--1 {
+    columns: 1;
+  }
+
+  /* line 36, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_column.sass */
+  .column--m--2 {
+    columns: 2;
+  }
+
+  /* line 36, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_column.sass */
+  .column--m--3 {
+    columns: 3;
+  }
+
+  /* line 36, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_column.sass */
+  .column--m--4 {
+    columns: 4;
+  }
+}
+@media screen and (min-width: 64em) {
+  /* line 36, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_column.sass */
+  .column--l--1 {
+    columns: 1;
+  }
+
+  /* line 36, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_column.sass */
+  .column--l--2 {
+    columns: 2;
+  }
+
+  /* line 36, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_column.sass */
+  .column--l--3 {
+    columns: 3;
+  }
+
+  /* line 36, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_column.sass */
+  .column--l--4 {
+    columns: 4;
+  }
+}
+/* line 88, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_dropdown.sass */
+.dropdown {
+  position: relative;
+}
+
+/* line 99, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_dropdown.sass */
+.dropdown--floating .dropdown-menu {
+  border-radius: 3px;
+  margin-top: 1.25em;
+  transition: opacity 0.2s ease-in-out, top 0.3s ease-in-out;
+  top: 65%;
+}
+/* line 104, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_dropdown.sass */
+.dropdown--floating .dropdown-menu::before {
+  border: 10px solid transparent;
+  border-bottom: 10px solid #333333;
+  border-top: 0;
+  bottom: auto;
+  content: "";
+  display: block;
+  height: 0;
+  left: 50%;
+  margin: -10px 0 0 -10px;
+  margin-top: 0;
+  position: absolute;
+  right: auto;
+  width: 0;
+  top: -10px;
+  bottom: auto;
+  left: 2.5em;
+  z-index: 10;
+}
+/* line 111, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_dropdown.sass */
+.dropdown--floating .dropdown-menu-item:first-child .dropdown-menu-item-link {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+/* line 119, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_dropdown.sass */
+.dropdown--center {
+  display: inline-block;
+}
+/* line 122, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_dropdown.sass */
+.dropdown--center .dropdown-menu {
+  left: 50%;
+  margin-left: -125px;
+}
+/* line 125, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_dropdown.sass */
+.dropdown--center .dropdown-menu::before {
+  left: 50%;
+}
+
+/* line 136, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_dropdown.sass */
+.dropdown.is-active .dropdown-menu {
+  height: auto;
+  opacity: 1;
+  overflow: visible;
+  top: 100%;
+  visibility: visible;
+}
+
+/* line 149, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_dropdown.sass */
+.dropdown-menu {
+  background: #333333;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  height: 0;
+  list-style-type: none;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  transition: none;
+  visibility: hidden;
+  width: 250px;
+  z-index: 10;
+}
+
+/* line 168, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_dropdown.sass */
+.dropdown-menu-item {
+  font-size: 85%;
+  margin: 0;
+}
+/* line 171, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_dropdown.sass */
+.dropdown-menu-item:not(:last-child) {
+  border-bottom: 1px solid #555555;
+}
+/* line 174, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_dropdown.sass */
+.dropdown-menu-item:last-child .dropdown-menu-item-link {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+/* line 178, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_dropdown.sass */
+.dropdown-menu-item-link {
+  border: 0;
+  color: white;
+  display: block;
+  padding: 0.625em;
+  transition: all 0.2s ease-in-out;
+}
+/* line 184, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_dropdown.sass */
+.dropdown-menu-item-link:hover, .dropdown-menu-item-link:focus {
+  background: #555555;
+  color: white;
+}
+
+/* line 46, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_form.sass */
+.form {
+  margin-bottom: 1.25em;
+}
+
+/* line 57, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_form.sass */
+.form--condensed .form-field {
+  margin-bottom: 0.625em;
+}
+
+/* line 66, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_form.sass */
+.form-field {
+  border: 0;
+  margin-bottom: 1.25em;
+  padding: 0;
+}
+
+/* line 75, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_form.sass */
+.form-field--inline .form-btn {
+  display: block;
+  line-height: 2.9;
+  min-width: 100%;
+}
+
+/* line 82, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_form.sass */
+.form-input {
+  background: white;
+  border: 2px solid #dddddd;
+  border-radius: 2px;
+  box-sizing: border-box;
+  font-size: 100%;
+  padding: 0.625em;
+  position: relative;
+  transition: border-color 0.2s ease-in-out;
+  width: 100%;
+}
+/* line 92, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_form.sass */
+.form-input:focus {
+  border-color: #4e4e5b;
+  outline: none;
+}
+
+/* line 98, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_form.sass */
+.form-label {
+  display: block;
+  font-size: 90%;
+  font-weight: bold;
+  margin-bottom: 0.3125em;
+}
+
+/* line 106, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_form.sass */
+.form-select {
+  min-width: 12.5em;
+}
+
+/* line 20, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_list.sass */
+.group::after, .bucket::after, .g::after, .list--object::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* line 41, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_list.sass */
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 54, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_list.sass */
+.list--divided > .list-item {
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 1.25em;
+}
+/* line 57, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_list.sass */
+.list--divided > .list-item:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* line 65, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_list.sass */
+.list--inline > .list-item {
+  display: inline;
+  margin-right: 1.25em;
+}
+/* line 68, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_list.sass */
+.list--inline > .list-item:last-child {
+  margin-right: 0;
+}
+
+/* line 76, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_list.sass */
+.list--object > .list-item {
+  float: left;
+  margin-right: 1.25em;
+}
+/* line 79, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_list.sass */
+.list--object > .list-item:last-child {
+  margin-right: 0;
+}
+
+/* line 84, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_list.sass */
+.list--styled {
+  padding-left: 1.25em;
+}
+/* line 87, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_list.sass */
+.list--styled > .list-item {
+  display: list-item;
+  list-style-type: disc;
+}
+
+/* line 95, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_list.sass */
+.list--styled--numbered > .list-item {
+  list-style-type: decimal;
+}
+
+/* line 104, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_list.sass */
+.list-item {
+  display: block;
+  margin-bottom: 1.25em;
+}
+/* line 107, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_list.sass */
+.list-item:last-child {
+  margin-bottom: 0;
+}
+
+/* line 37, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+.stretch, .panel {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* line 66, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+.panel {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* line 77, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+.panel--scroll {
+  overflow: auto;
+}
+
+/* line 86, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+.panel-content {
+  padding: 1.25em;
+}
+
+/* line 97, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+.panel--top--1of1 {
+  bottom: 0;
+}
+
+/* line 102, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+.panel--top--1of2 {
+  bottom: 50%;
+}
+
+/* line 108, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+.panel--top--1of3 {
+  bottom: 66.666%;
+}
+
+/* line 110, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+.panel--top--2of3 {
+  bottom: 33.333%;
+}
+
+/* line 116, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+.panel--top--1of4 {
+  bottom: 75%;
+}
+
+/* line 118, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+.panel--top--3of4 {
+  bottom: 25%;
+}
+
+/* line 122, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+.panel--top--1of5 {
+  bottom: 80%;
+}
+
+/* line 124, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+.panel--top--2of5 {
+  bottom: 60%;
+}
+
+/* line 126, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+.panel--top--3of5 {
+  bottom: 40%;
+}
+
+/* line 128, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+.panel--top--4of5 {
+  bottom: 20%;
+}
+
+/* line 97, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+.panel--right--1of1 {
+  left: 0;
+}
+
+/* line 102, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+.panel--right--1of2 {
+  left: 50%;
+}
+
+/* line 108, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+.panel--right--1of3 {
+  left: 66.666%;
+}
+
+/* line 110, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+.panel--right--2of3 {
+  left: 33.333%;
+}
+
+/* line 116, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+.panel--right--1of4 {
+  left: 75%;
+}
+
+/* line 118, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+.panel--right--3of4 {
+  left: 25%;
+}
+
+/* line 122, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+.panel--right--1of5 {
+  left: 80%;
+}
+
+/* line 124, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+.panel--right--2of5 {
+  left: 60%;
+}
+
+/* line 126, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+.panel--right--3of5 {
+  left: 40%;
+}
+
+/* line 128, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+.panel--right--4of5 {
+  left: 20%;
+}
+
+/* line 97, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+.panel--bottom--1of1 {
+  top: 0;
+}
+
+/* line 102, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+.panel--bottom--1of2 {
+  top: 50%;
+}
+
+/* line 108, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+.panel--bottom--1of3 {
+  top: 66.666%;
+}
+
+/* line 110, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+.panel--bottom--2of3 {
+  top: 33.333%;
+}
+
+/* line 116, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+.panel--bottom--1of4 {
+  top: 75%;
+}
+
+/* line 118, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+.panel--bottom--3of4 {
+  top: 25%;
+}
+
+/* line 122, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+.panel--bottom--1of5 {
+  top: 80%;
+}
+
+/* line 124, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+.panel--bottom--2of5 {
+  top: 60%;
+}
+
+/* line 126, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+.panel--bottom--3of5 {
+  top: 40%;
+}
+
+/* line 128, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+.panel--bottom--4of5 {
+  top: 20%;
+}
+
+/* line 97, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+.panel--left--1of1 {
+  right: 0;
+}
+
+/* line 102, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+.panel--left--1of2 {
+  right: 50%;
+}
+
+/* line 108, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+.panel--left--1of3 {
+  right: 66.666%;
+}
+
+/* line 110, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+.panel--left--2of3 {
+  right: 33.333%;
+}
+
+/* line 116, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+.panel--left--1of4 {
+  right: 75%;
+}
+
+/* line 118, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+.panel--left--3of4 {
+  right: 25%;
+}
+
+/* line 122, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+.panel--left--1of5 {
+  right: 80%;
+}
+
+/* line 124, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+.panel--left--2of5 {
+  right: 60%;
+}
+
+/* line 126, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+.panel--left--3of5 {
+  right: 40%;
+}
+
+/* line 128, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+.panel--left--4of5 {
+  right: 20%;
+}
+
+@media screen and (min-width: 44em) {
+  /* line 97, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--top--s--1of1 {
+    bottom: 0;
+  }
+
+  /* line 102, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--top--s--1of2 {
+    bottom: 50%;
+  }
+
+  /* line 108, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--top--s--1of3 {
+    bottom: 66.666%;
+  }
+
+  /* line 110, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--top--s--2of3 {
+    bottom: 33.333%;
+  }
+
+  /* line 116, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--top--s--1of4 {
+    bottom: 75%;
+  }
+
+  /* line 118, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--top--s--3of4 {
+    bottom: 25%;
+  }
+
+  /* line 122, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--top--s--1of5 {
+    bottom: 80%;
+  }
+
+  /* line 124, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--top--s--2of5 {
+    bottom: 60%;
+  }
+
+  /* line 126, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--top--s--3of5 {
+    bottom: 40%;
+  }
+
+  /* line 128, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--top--s--4of5 {
+    bottom: 20%;
+  }
+
+  /* line 97, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--right--s--1of1 {
+    left: 0;
+  }
+
+  /* line 102, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--right--s--1of2 {
+    left: 50%;
+  }
+
+  /* line 108, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--right--s--1of3 {
+    left: 66.666%;
+  }
+
+  /* line 110, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--right--s--2of3 {
+    left: 33.333%;
+  }
+
+  /* line 116, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--right--s--1of4 {
+    left: 75%;
+  }
+
+  /* line 118, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--right--s--3of4 {
+    left: 25%;
+  }
+
+  /* line 122, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--right--s--1of5 {
+    left: 80%;
+  }
+
+  /* line 124, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--right--s--2of5 {
+    left: 60%;
+  }
+
+  /* line 126, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--right--s--3of5 {
+    left: 40%;
+  }
+
+  /* line 128, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--right--s--4of5 {
+    left: 20%;
+  }
+
+  /* line 97, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--bottom--s--1of1 {
+    top: 0;
+  }
+
+  /* line 102, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--bottom--s--1of2 {
+    top: 50%;
+  }
+
+  /* line 108, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--bottom--s--1of3 {
+    top: 66.666%;
+  }
+
+  /* line 110, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--bottom--s--2of3 {
+    top: 33.333%;
+  }
+
+  /* line 116, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--bottom--s--1of4 {
+    top: 75%;
+  }
+
+  /* line 118, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--bottom--s--3of4 {
+    top: 25%;
+  }
+
+  /* line 122, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--bottom--s--1of5 {
+    top: 80%;
+  }
+
+  /* line 124, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--bottom--s--2of5 {
+    top: 60%;
+  }
+
+  /* line 126, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--bottom--s--3of5 {
+    top: 40%;
+  }
+
+  /* line 128, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--bottom--s--4of5 {
+    top: 20%;
+  }
+
+  /* line 97, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--left--s--1of1 {
+    right: 0;
+  }
+
+  /* line 102, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--left--s--1of2 {
+    right: 50%;
+  }
+
+  /* line 108, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--left--s--1of3 {
+    right: 66.666%;
+  }
+
+  /* line 110, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--left--s--2of3 {
+    right: 33.333%;
+  }
+
+  /* line 116, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--left--s--1of4 {
+    right: 75%;
+  }
+
+  /* line 118, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--left--s--3of4 {
+    right: 25%;
+  }
+
+  /* line 122, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--left--s--1of5 {
+    right: 80%;
+  }
+
+  /* line 124, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--left--s--2of5 {
+    right: 60%;
+  }
+
+  /* line 126, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--left--s--3of5 {
+    right: 40%;
+  }
+
+  /* line 128, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--left--s--4of5 {
+    right: 20%;
+  }
+}
+@media screen and (min-width: 64em) {
+  /* line 97, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--top--m--1of1 {
+    bottom: 0;
+  }
+
+  /* line 102, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--top--m--1of2 {
+    bottom: 50%;
+  }
+
+  /* line 108, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--top--m--1of3 {
+    bottom: 66.666%;
+  }
+
+  /* line 110, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--top--m--2of3 {
+    bottom: 33.333%;
+  }
+
+  /* line 116, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--top--m--1of4 {
+    bottom: 75%;
+  }
+
+  /* line 118, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--top--m--3of4 {
+    bottom: 25%;
+  }
+
+  /* line 122, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--top--m--1of5 {
+    bottom: 80%;
+  }
+
+  /* line 124, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--top--m--2of5 {
+    bottom: 60%;
+  }
+
+  /* line 126, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--top--m--3of5 {
+    bottom: 40%;
+  }
+
+  /* line 128, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--top--m--4of5 {
+    bottom: 20%;
+  }
+
+  /* line 97, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--right--m--1of1 {
+    left: 0;
+  }
+
+  /* line 102, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--right--m--1of2 {
+    left: 50%;
+  }
+
+  /* line 108, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--right--m--1of3 {
+    left: 66.666%;
+  }
+
+  /* line 110, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--right--m--2of3 {
+    left: 33.333%;
+  }
+
+  /* line 116, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--right--m--1of4 {
+    left: 75%;
+  }
+
+  /* line 118, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--right--m--3of4 {
+    left: 25%;
+  }
+
+  /* line 122, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--right--m--1of5 {
+    left: 80%;
+  }
+
+  /* line 124, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--right--m--2of5 {
+    left: 60%;
+  }
+
+  /* line 126, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--right--m--3of5 {
+    left: 40%;
+  }
+
+  /* line 128, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--right--m--4of5 {
+    left: 20%;
+  }
+
+  /* line 97, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--bottom--m--1of1 {
+    top: 0;
+  }
+
+  /* line 102, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--bottom--m--1of2 {
+    top: 50%;
+  }
+
+  /* line 108, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--bottom--m--1of3 {
+    top: 66.666%;
+  }
+
+  /* line 110, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--bottom--m--2of3 {
+    top: 33.333%;
+  }
+
+  /* line 116, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--bottom--m--1of4 {
+    top: 75%;
+  }
+
+  /* line 118, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--bottom--m--3of4 {
+    top: 25%;
+  }
+
+  /* line 122, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--bottom--m--1of5 {
+    top: 80%;
+  }
+
+  /* line 124, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--bottom--m--2of5 {
+    top: 60%;
+  }
+
+  /* line 126, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--bottom--m--3of5 {
+    top: 40%;
+  }
+
+  /* line 128, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--bottom--m--4of5 {
+    top: 20%;
+  }
+
+  /* line 97, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--left--m--1of1 {
+    right: 0;
+  }
+
+  /* line 102, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--left--m--1of2 {
+    right: 50%;
+  }
+
+  /* line 108, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--left--m--1of3 {
+    right: 66.666%;
+  }
+
+  /* line 110, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--left--m--2of3 {
+    right: 33.333%;
+  }
+
+  /* line 116, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--left--m--1of4 {
+    right: 75%;
+  }
+
+  /* line 118, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--left--m--3of4 {
+    right: 25%;
+  }
+
+  /* line 122, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--left--m--1of5 {
+    right: 80%;
+  }
+
+  /* line 124, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--left--m--2of5 {
+    right: 60%;
+  }
+
+  /* line 126, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--left--m--3of5 {
+    right: 40%;
+  }
+
+  /* line 128, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_panel.sass */
+  .panel--left--m--4of5 {
+    right: 20%;
+  }
+}
+/* line 37, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_pillar.sass */
+.pillar {
+  border-bottom: 2px solid #9a9aa8;
+  border-top: 2px solid #9a9aa8;
+  padding-bottom: 1.25em;
+  padding-top: 1.25em;
+}
+
+/* line 19, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_progress.sass */
+.boxSizing, .progress-bar {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 36, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_progress.sass */
+.progress {
+  background: white;
+  height: 10px;
+  position: relative;
+}
+
+/* line 47, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_progress.sass */
+.progress-bar {
+  background: #4e4e5b;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+/* line 39, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_split.sass */
+.split {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 52, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_split.sass */
+.split--divided .split-item {
+  border-bottom: 2px solid #9a9aa8;
+  padding-bottom: 0.75em;
+}
+/* line 55, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_split.sass */
+.split--divided .split-item:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* line 65, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_split.sass */
+.split-item {
+  display: table;
+  width: 100%;
+}
+/* line 68, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_split.sass */
+.split-item img {
+  max-width: none;
+}
+
+/* line 73, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_split.sass */
+.split-cell {
+  display: table-cell;
+}
+/* line 75, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_split.sass */
+.split-cell:first-child {
+  width: 10000px;
+}
+/* line 77, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_split.sass */
+.split-cell:last-child {
+  white-space: nowrap;
+}
+
+/* line 51, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_table.sass */
+.table {
+  width: 100%;
+}
+
+/* line 62, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_table.sass */
+.table--striped .table-body .table-row:nth-child(odd) {
+  background: #eeeeee;
+}
+
+/* line 71, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_table.sass */
+.table-data,
+.table-header {
+  border-top: 2px solid #dddddd;
+  line-height: 1.5;
+  padding: 0.625em 1.25em;
+  vertical-align: top;
+}
+
+/* line 80, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_table.sass */
+.table-data {
+  border-top-width: 1px;
+  font-size: 90%;
+  vertical-align: middle;
+}
+
+/* line 87, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_table.sass */
+.table-header {
+  border-top: 0;
+  text-align: left;
+}
+
+/* line 93, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_table.sass */
+.table-head {
+  border-bottom: 2px solid #dddddd;
+  border-top: 0;
+  font-size: 75%;
+  padding: 0.625em 1.25em;
+  text-align: left;
+  text-transform: uppercase;
+  vertical-align: bottom;
+}
+
+/* line 26, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_thumb.sass */
+.thumb {
+  border-radius: 50%;
+  display: block;
+}
+
+/* line 34, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/components/_thumb.sass */
+.thumb--m {
+  border-radius: 4px;
+}
+
+/* line 33, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/structures/_collection.sass */
+.collection-item {
+  margin-bottom: 1.25em;
+}
+
+/* line 49, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/structures/_collection.sass */
+.collection--1of1 > .collection-item:nth-child(1n + 1), .collection--1of2 > .collection-item:nth-child(2n + 1), .collection--1of3 > .collection-item:nth-child(3n + 1) {
+  clear: left;
+}
+
+@media screen and (min-width: 30em) {
+  /* line 46, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/structures/_collection.sass */
+  [class*='collection--s'] > .collection-item:nth-child(n) {
+    clear: none;
+  }
+}
+@media screen and (min-width: 30em) {
+  /* line 49, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/structures/_collection.sass */
+  .collection--s--1of1 > .collection-item:nth-child(1n + 1), .collection--s--1of2 > .collection-item:nth-child(2n + 1), .collection--s--1of3 > .collection-item:nth-child(3n + 1) {
+    clear: left;
+  }
+}
+
+@media screen and (min-width: 50em) {
+  /* line 46, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/structures/_collection.sass */
+  [class*='collection--m'] > .collection-item:nth-child(n) {
+    clear: none;
+  }
+}
+@media screen and (min-width: 50em) {
+  /* line 49, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/structures/_collection.sass */
+  .collection--m--1of1 > .collection-item:nth-child(1n + 1), .collection--m--1of2 > .collection-item:nth-child(2n + 1), .collection--m--1of3 > .collection-item:nth-child(3n + 1) {
+    clear: left;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  /* line 46, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/structures/_collection.sass */
+  [class*='collection--l'] > .collection-item:nth-child(n) {
+    clear: none;
+  }
+}
+@media screen and (min-width: 64em) {
+  /* line 49, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/structures/_collection.sass */
+  .collection--l--1of1 > .collection-item:nth-child(1n + 1), .collection--l--1of2 > .collection-item:nth-child(2n + 1), .collection--l--1of3 > .collection-item:nth-child(3n + 1) {
+    clear: left;
+  }
+}
+
+/* line 12, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.bch {
+  background: #ff4294;
+}
+
+/* line 14, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.bci {
+  background: white;
+}
+
+/* line 16, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.bcs {
+  background: #ff75b1;
+}
+
+/* line 23, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.db {
+  display: block;
+}
+
+/* line 25, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.di {
+  display: inline;
+}
+
+/* line 27, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.dib {
+  display: inline-block;
+}
+
+/* line 29, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.dn {
+  display: none;
+}
+
+/* line 38, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.maxs {
+  margin: 0.3125em;
+}
+
+/* line 40, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.mas {
+  margin: 0.625em;
+}
+
+/* line 42, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.mam {
+  margin: 1.25em;
+}
+
+/* line 44, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.mal {
+  margin: 2.5em;
+}
+
+/* line 46, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.maxl {
+  margin: 5em;
+}
+
+/* line 51, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.mbf {
+  margin-bottom: 0;
+}
+
+/* line 53, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.mbxs {
+  margin-bottom: 0.3125em;
+}
+
+/* line 55, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.mbs {
+  margin-bottom: 0.625em;
+}
+
+/* line 57, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.mbm {
+  margin-bottom: 1.25em;
+}
+
+/* line 59, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.mbl {
+  margin-bottom: 2.5em;
+}
+
+/* line 61, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.mbxl {
+  margin-bottom: 5em;
+}
+
+/* line 66, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.mhc {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 72, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.mlf {
+  margin-left: 0;
+}
+
+/* line 74, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.mlxs {
+  margin-left: 0.3125em;
+}
+
+/* line 76, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.mls {
+  margin-left: 0.625em;
+}
+
+/* line 78, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.mlm {
+  margin-left: 1.25em;
+}
+
+/* line 80, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.mll {
+  margin-left: 2.5em;
+}
+
+/* line 85, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.mrf {
+  margin-right: 0;
+}
+
+/* line 87, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.mrxs {
+  margin-right: 0.3125em;
+}
+
+/* line 89, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.mrs {
+  margin-right: 0.625em;
+}
+
+/* line 91, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.mrm {
+  margin-right: 1.25em;
+}
+
+/* line 93, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.mrl {
+  margin-right: 2.5em;
+}
+
+/* line 98, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.mtf {
+  margin-top: 0;
+}
+
+/* line 100, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.mtxs {
+  margin-top: 0.3125em;
+}
+
+/* line 102, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.mts {
+  margin-top: 0.625em;
+}
+
+/* line 104, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.mtm {
+  margin-top: 1.25em;
+}
+
+/* line 106, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.mtl {
+  margin-top: 2.5em;
+}
+
+/* line 108, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.mtxl {
+  margin-top: 5em;
+}
+
+/* line 117, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.paxs {
+  padding: 0.3125em;
+}
+
+/* line 119, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.pas {
+  padding: 0.625em;
+}
+
+/* line 121, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.pam {
+  padding: 1.25em;
+}
+
+/* line 123, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.pal {
+  padding: 2.5em;
+}
+
+/* line 125, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.paxl {
+  padding: 5em;
+}
+
+/* line 130, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.pbf {
+  padding-bottom: 0;
+}
+
+/* line 132, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.pbxs {
+  padding-bottom: 0.3125em;
+}
+
+/* line 134, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.pbs {
+  padding-bottom: 0.625em;
+}
+
+/* line 136, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.pbm {
+  padding-bottom: 1.25em;
+}
+
+/* line 138, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.pbl {
+  padding-bottom: 2.5em;
+}
+
+/* line 140, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.pbxl {
+  padding-bottom: 5em;
+}
+
+/* line 145, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.plf {
+  padding-left: 0;
+}
+
+/* line 147, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.plxs {
+  padding-left: 0.3125em;
+}
+
+/* line 149, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.pls {
+  padding-left: 0.625em;
+}
+
+/* line 151, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.plm {
+  padding-left: 1.25em;
+}
+
+/* line 153, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.pll {
+  padding-left: 2.5em;
+}
+
+/* line 158, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.prf {
+  padding-right: 0;
+}
+
+/* line 160, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.prxs {
+  padding-right: 0.3125em;
+}
+
+/* line 162, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.prs {
+  padding-right: 0.625em;
+}
+
+/* line 164, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.prm {
+  padding-right: 1.25em;
+}
+
+/* line 166, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.prl {
+  padding-right: 2.5em;
+}
+
+/* line 171, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.ptf {
+  padding-top: 0;
+}
+
+/* line 173, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.ptxs {
+  padding-top: 0.3125em;
+}
+
+/* line 175, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.pts {
+  padding-top: 0.625em;
+}
+
+/* line 177, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.ptm {
+  padding-top: 1.25em;
+}
+
+/* line 179, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.ptl {
+  padding-top: 2.5em;
+}
+
+/* line 181, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.ptxl {
+  padding-top: 5em;
+}
+
+/* line 188, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.fl {
+  float: left;
+}
+
+/* line 190, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.fr {
+  float: right;
+}
+
+/* line 193, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.poa {
+  position: absolute;
+}
+
+/* line 195, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.pof {
+  position: fixed;
+}
+
+/* line 197, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.por {
+  position: relative;
+}
+
+/* line 199, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.pos {
+  position: static;
+}
+
+/* line 206, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.ra {
+  border-radius: 50%;
+}
+
+/* line 208, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.ram {
+  border-radius: 3px;
+}
+
+/* line 210, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.ran {
+  border-radius: 0;
+}
+
+/* line 219, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.tac {
+  text-align: center;
+}
+
+/* line 224, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.tch {
+  color: #ff4294;
+}
+
+/* line 226, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.tci {
+  color: white;
+}
+
+/* line 228, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.tcs {
+  color: #ff75b1;
+}
+
+/* line 230, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.tct {
+  color: #444444;
+}
+
+/* line 235, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.tfb {
+  font-family: "Rajdhani", sans-serif;
+}
+
+/* line 237, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.tfh {
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* line 242, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.tsxs {
+  font-size: 60%;
+}
+
+/* line 244, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.tss {
+  font-size: 75%;
+}
+
+/* line 246, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.tsm {
+  font-size: 90%;
+}
+
+/* line 248, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.tsl {
+  font-size: 115%;
+}
+
+/* line 250, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.tsxl {
+  font-size: 150%;
+}
+
+/* line 255, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.tsi {
+  font-style: italic;
+}
+
+/* line 260, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.ttu {
+  text-transform: uppercase;
+}
+
+/* line 265, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.twn {
+  font-weight: normal;
+}
+
+/* line 267, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.twb {
+  font-weight: bold;
+}
+
+/* line 295, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.bdr {
+  border: 2px solid #ffdbeb;
+}
+
+/* line 300, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.bdrb {
+  border-bottom: 2px solid #ffdbeb;
+}
+
+/* line 302, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.bdrl {
+  border-left: 2px solid #ffdbeb;
+}
+
+/* line 304, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.bdrr {
+  border-right: 2px solid #ffdbeb;
+}
+
+/* line 306, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.bdrt {
+  border-top: 2px solid #ffdbeb;
+}
+
+/* line 313, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.optq {
+  opacity: 0.75;
+}
+
+/* line 315, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.oph {
+  opacity: 0.5;
+}
+
+/* line 317, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.opf {
+  opacity: 1;
+}
+
+/* line 326, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.pobxs {
+  bottom: 0.3125em;
+}
+
+/* line 328, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.pobs {
+  bottom: 0.625em;
+}
+
+/* line 330, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.pobm {
+  bottom: 1.25em;
+}
+
+/* line 332, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.pobl {
+  bottom: 2.5em;
+}
+
+/* line 334, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.pobsn {
+  bottom: -0.625em;
+}
+
+/* line 336, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.pobmn {
+  bottom: -1.25em;
+}
+
+/* line 338, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.pobln {
+  bottom: -2.5em;
+}
+
+/* line 343, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.polxs {
+  left: 0.3125em;
+}
+
+/* line 345, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.pols {
+  left: 0.625em;
+}
+
+/* line 347, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.polm {
+  left: 1.25em;
+}
+
+/* line 349, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.poll {
+  left: 2.5em;
+}
+
+/* line 351, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.polsn {
+  left: -0.625em;
+}
+
+/* line 353, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.polmn {
+  left: -1.25em;
+}
+
+/* line 355, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.polln {
+  left: -2.5em;
+}
+
+/* line 360, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.porxs {
+  right: 0.3125em;
+}
+
+/* line 362, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.pors {
+  right: 0.625em;
+}
+
+/* line 364, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.porm {
+  right: 1.25em;
+}
+
+/* line 366, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.porl {
+  right: 2.5em;
+}
+
+/* line 368, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.porsn {
+  right: -0.625em;
+}
+
+/* line 370, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.pormn {
+  right: -1.25em;
+}
+
+/* line 372, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.porln {
+  right: -2.5em;
+}
+
+/* line 377, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.potxs {
+  top: 0.3125em;
+}
+
+/* line 379, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.pots {
+  top: 0.625em;
+}
+
+/* line 381, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.potm {
+  top: 1.25em;
+}
+
+/* line 383, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.potl {
+  top: 2.5em;
+}
+
+/* line 385, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.potsn {
+  top: -0.625em;
+}
+
+/* line 387, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.potmn {
+  top: -1.25em;
+}
+
+/* line 389, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/foundation/_tools.sass */
+.potln {
+  top: -2.5em;
+}
+
+/* line 69, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/application.css.sass.erb */
+.artcover {
+  float: left;
+}
+/* line 71, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/application.css.sass.erb */
+.artcover img {
+  margin: 0 auto;
+}
+
+@media (max-width: 1019px) {
+  /* line 75, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/application.css.sass.erb */
+  .artcover {
+    float: none;
+  }
+  /* line 77, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/application.css.sass.erb */
+  .artcover img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+/* line 80, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/application.css.sass.erb */
+html {
+  background: -webkit-linear-gradient(90deg, #616161 10%, #9bc5c3 90%);
+  background: -moz-linear-gradient(90deg, #616161 10%, #9bc5c3 90%);
+  background: -ms-linear-gradient(90deg, #616161 10%, #9bc5c3 90%);
+  background: -o-linear-gradient(90deg, #616161 10%, #9bc5c3 90%);
+  background: linear-gradient(90deg, #616161 10%, #9bc5c3 90%);
+}
+
+/* line 87, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/application.css.sass.erb */
+.key {
+  float: right;
+  text-align: center;
+}
+
+/* line 91, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/application.css.sass.erb */
+li.results {
+  border-radius: 26px 26px 26px 26px;
+  -moz-border-radius: 26px 26px 26px 26px;
+  -webkit-border-radius: 26px 26px 26px 26px;
+  border: 2px solid white;
+}
+
+/* line 97, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/application.css.sass.erb */
+.search-icon {
+  font-size: 2em;
+  height: 80px;
+  position: relative;
+  padding: 8px 5px 8px 30px;
+  border: 1px solid #cccccc;
+  background: white url(http://i.imgur.com/lFkqn.png) left center no-repeat;
+  color: #444444;
+}
+
+/* line 106, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/application.css.sass.erb */
+ul, li {
+  list-style-type: none;
+}
+
+/* line 109, /Users/jamesmichiemo/Dropbox/serverside/ruby/rails/omnibeat/app/assets/stylesheets/application.css.sass.erb */
+.form-input {
+  width: 97.5%;
+}
