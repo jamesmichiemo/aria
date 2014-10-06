@@ -13,5 +13,5 @@
               = collect_artists(r["artists"])
             .mts.g-b.g-b--l--7of12= r["title"]
             .mtm.g-b
-              = audio_tag("http://geo-samples.beatport.com/lofi/#{r["id"]}.LOFI.mp3", controls: true)
+              = audio_tag("http://geo-samples.beatport.com/lofi/#{r["id"]}.LOFI.mp3", controls: true, preload: false)
 
