@@ -14,6 +14,12 @@ class TracksController < ApplicationController
     render 'index'
   end
 
+  def show
+    @consumer = OAuth::Consumer.new(ENV['OMNIAUTH_PROVIDER_KEY'], ENV['OMNIAUTH_PROVIDER_SECRET'], {:site=>ENV['OAUTH_CONSUMER_SITE']})
+    @accesstoken = OAuth::AccessToken.new(@consumer, session[:token], session[:secret])
+    @tracks = JSON.parse(@accesstoken.get("https://oauth-api.beatport.com/catalog/3/tracks/similar?id=#{URI.encode(params[:id])}").body)
+  end
+
   private
   def search_params
     params.require(:search).permit(:query)
