@@ -14,5 +14,5 @@
             .mts.g-b.g-b--l--7of12= r["title"]
             .mtm.g-b
               = audio_tag("http://geo-samples.beatport.com/lofi/#{r["id"]}.LOFI.mp3", controls: true, preload: false)
-              = button_to('', track_path(r["id"]))
+              = button_to('', track_path(id: r["id"], key: decode_entities(r["key"]["shortName"])))
 
