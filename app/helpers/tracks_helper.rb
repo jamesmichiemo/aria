@@ -181,14 +181,7 @@ module TracksHelper
   end
 
   def affinity?(monad0, tonality0, monad1, tonality1)
-    if (monad0 == monad1) || # identical, including either major or minor
-       ((monad0 == 24 && monad1 == 13) && tonality0 == tonality1) || # 13 and 24 are affinite if the same tone quality
-       ((monad0 == 13 && monad1 == 24) && tonality0 == tonality1) || # 24 and 13 are affinite if the same tone quality
-       (monad0 == (monad1 - 1) && tonality0 == tonality1) || # affinity sequence
-       (monad0 == (monad1 + 1) && tonality0 == tonality1) # affinity sequence
-      true
-    end
-
+    true if ((((monad0 - monad1).abs%11) + (tonality1 == tonality0 ? 0 : 1)) < 2)
   end
 end
 
