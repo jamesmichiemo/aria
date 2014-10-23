@@ -6,6 +6,10 @@ gem 'oauth', '0.4.7'
 gem 'htmlentities', '4.3.1'
 gem 'kaminari', '~> 0.16.1'
 
+group :development, :test do
+  gem 'rspec-rails'
+end
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.5'
 
