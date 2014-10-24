@@ -10,6 +10,7 @@
             .mlxs.artcover
               = image_tag r["images"]["large"]["url"], :height => "130", :width => "130"
             .key.g-b.g-b--l--1of12= decode_entities(r["key"]["shortName"])
+            .key.g-b.g-b--l--1of12= r["bpm"]
             .mts.g-b.g-b--l--7of12
               = collect_artists(r["artists"])
             .mts.g-b.g-b--l--7of12= r["title"]
