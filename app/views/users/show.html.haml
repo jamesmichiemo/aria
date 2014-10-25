@@ -1,3 +1,12 @@
-%h3 User
-%p
-  = "Name: #{@user.name if @user.name}"
+= render 'layouts/shared/sidebar'
+
+%div.row.row--c
+  %div.g-b.g-b--l--11of12.g-b--center
+    %h3 User
+    %p
+      = "Name: #{@user.name if @user.name}"
+    = paginate @favorites
+    %ul
+      = render @favorites
+    = paginate @favorites
+

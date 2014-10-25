@@ -1,0 +1,14 @@
+%li.results.pam.mbl.g-b{:id => "favorite-#{favorite.id}"} 
+  .mlxs.artcover
+    = image_tag favorite.image_url, :height => "130", :width => "130"
+  .key.g-b.g-b--l--1of12= favorite.key
+  .key.g-b.g-b--l--1of12= favorite.bpm
+  .mts.g-b.g-b--l--7of12
+    = favorite.artist
+  .mts.g-b.g-b--l--7of12
+    = favorite.title
+  .mtm.g-b
+    = audio_tag("http://geo-samples.beatport.com/lofi/#{favorite.track_id}.LOFI.mp3", controls: true, preload: false)
+    = button_to('', track_path(id: favorite.track_id, key: favorite.key))
+    = link_to('destroy', favorite, method: :delete, data: { confirm: 'sure?' }, title: favorite.title)
+
