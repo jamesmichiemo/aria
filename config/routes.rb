@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root :to => 'tracks#index'
   resources :users, :tracks
+  resources :favorites, :only => [:create, :destroy]
   post 'tracks/:id', to: 'tracks#show'
   match 'search', to: 'tracks#search', via: [:get, :post]
   get '/auth/:provider/callback' => 'sessions#create'
