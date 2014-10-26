@@ -2,17 +2,17 @@
 
 %div.row.row--c
   %div.g-b.g-b--l--11of12.g-b--center
-    - @tracks["results"].each do |r|
-      - if r["type"] == "track"
-        %ul
-          %li.results.pam.mbl.g-b
-            .mlxs.artcover
-              = image_tag r["images"]["large"]["url"], :height => "130", :width => "130"
-            .key.g-b.g-b--l--1of12= decode_entities(r["key"]["shortName"])
-            .mts.g-b.g-b--l--7of12
-              = collect_artists(r["artists"])
-            .mts.g-b.g-b--l--7of12= r["title"]
-            .mtm.g-b
-              = audio_tag("http://geo-samples.beatport.com/lofi/#{r["id"]}.LOFI.mp3", controls: true, preload: false)
-              = button_to('', track_path(id: r["id"], key: decode_entities(r["key"]["shortName"])))
-
+    = paginate @results
+    - @results.each do |r|
+      %ul
+        %li.results.pam.mbl.g-b
+          .mlxs.artcover
+            = image_tag r["images"]["large"]["url"], :height => "130", :width => "130"
+          .key.g-b.g-b--l--1of12= decode_entities(r["key"]["shortName"]) unless r["key"].nil?
+          .mts.g-b.g-b--l--7of12
+            = collect_artists(r["artists"])
+          .mts.g-b.g-b--l--7of12= r["title"]
+          .mtm.g-b
+            = audio_tag("http://geo-samples.beatport.com/lofi/#{r["id"]}.LOFI.mp3", controls: true, preload: false)
+            = button_to('', track_path(id: r["id"], key: decode_entities(r["key"]["shortName"]))) unless r["key"].nil?
+    = paginate @results

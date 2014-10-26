@@ -2,8 +2,9 @@
 
 %div.row.row--c
   %div.g-b.g-b--l--11of12.g-b--center
-    - @tracks["results"].each do |r|
-      - if r["type"] == "track" && affinity?(encode_key(decode_entities(r["key"]["shortName"])).first, encode_key(decode_entities(r["key"]["shortName"])).last, encode_key(decode_entities(@track_key)).first, encode_key(decode_entities(@track_key)).last)
+    = paginate @results
+    - @results.each do |r|
+      - if affinity?(encode_key(decode_entities(r["key"]["shortName"])).first, encode_key(decode_entities(r["key"]["shortName"])).last, encode_key(decode_entities(@track_key)).first, encode_key(decode_entities(@track_key)).last)
         %ul
           %li.results.pam.mbl.g-b
             .mlxs.artcover
@@ -15,4 +16,4 @@
             .mtm.g-b
               = audio_tag("http://geo-samples.beatport.com/lofi/#{r["id"]}.LOFI.mp3", controls: true, preload: false)
               = button_to('', track_path(id: r["id"], key: decode_entities(r["key"]["shortName"])))
-
+    = paginate @results
