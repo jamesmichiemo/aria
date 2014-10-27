@@ -3,8 +3,8 @@
 %div.row.row--c
   %div.g-b.g-b--l--11of12.g-b--center
     = paginate @results
-    - @results.each do |r|
-      %ul
+    %ul
+      - @results.each do |r|
         %li.results.pam.mbl.g-b
           .mlxs.artcover
             = image_tag r["images"]["large"]["url"], :height => "130", :width => "130"

@@ -3,9 +3,9 @@
 %div.row.row--c
   %div.g-b.g-b--l--11of12.g-b--center
     = paginate @results
-    - @results.each do |r|
-      - if affinity?(encode_key(decode_entities(r["key"]["shortName"])).first, encode_key(decode_entities(r["key"]["shortName"])).last, encode_key(decode_entities(@track_key)).first, encode_key(decode_entities(@track_key)).last)
-        %ul
+    %ul
+      - @results.each do |r|
+        - if affinity?(encode_key(decode_entities(r["key"]["shortName"])).first, encode_key(decode_entities(r["key"]["shortName"])).last, encode_key(decode_entities(@track_key)).first, encode_key(decode_entities(@track_key)).last)
           %li.results.pam.mbl.g-b
             .mlxs.artcover
               = image_tag r["images"]["large"]["url"], :height => "130", :width => "130"
