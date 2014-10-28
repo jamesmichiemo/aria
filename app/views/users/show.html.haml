@@ -5,6 +5,8 @@
     %h3 User
     %p
       = "Name: #{@user.name if @user.name}"
+      = "Username: #{@user.username if @user.username}"
+      = "uid: #{@user.uid if @user.uid}"
     = paginate @favorites
     %ul
       = render @favorites
