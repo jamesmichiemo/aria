@@ -1,4 +1,8 @@
 class FavoritesController < ApplicationController
+  def index
+    @favorites = current_user.favorites.page(params[:page]).per(10)
+  end
+
   def create
     @favorites = current_user.favorites.build(favorite_params)
     if @favorites.save

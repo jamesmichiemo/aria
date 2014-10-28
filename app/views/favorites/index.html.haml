@@ -2,11 +2,8 @@
 
 %div.row.row--c
   %div.g-b.g-b--l--11of12.g-b--center
-    %h3 User
-    %p
-      = "Name: #{@user.name if @user.name}"
-      = "Username: #{@user.username if @user.username}"
-      = "uid: #{@user.uid if @user.uid}"
+    %h3
+      = "#{current_user.favorites.count} favorites"
     = paginate @favorites
     %ul
       = render @favorites
