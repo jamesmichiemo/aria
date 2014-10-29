@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.1.4'
 gem 'haml-rails', '0.5.3'
 gem 'omniauth-oauth', '1.0.1'
 gem 'json', '1.8.1'
