@@ -5,16 +5,18 @@
     = paginate @results
     %ul
       - @results.each do |r|
-        %li.results.pam.mbl.g-b
+        %li.results.pam.mbl.g-b{:id => r["id"]}
           .mlxs.artcover
             = image_tag r["images"]["large"]["url"], :height => "130", :width => "130"
           .key.g-b.g-b--l--1of12= decode_entities(r["key"]["shortName"]) unless r["key"].nil?
-          .mts.g-b.g-b--l--7of12
+          .bpm.g-b.g-b--l--1of12= r["bpm"]
+          .artists.mts.g-b.g-b--l--7of12
             = collect_artists(r["artists"])
-          .mts.g-b.g-b--l--7of12= r["title"]
+          .title.mts.g-b.g-b--l--7of12= r["title"]
           .mtm.g-b
             = audio_tag("http://geo-samples.beatport.com/lofi/#{r["id"]}.LOFI.mp3", controls: true, preload: false)
             = button_to('', track_path(id: r["id"], key: decode_entities(r["key"]["shortName"]))) unless r["key"].nil?
-            = link_to('fav', favorites_path(favorite: {image_url: r["images"]["large"]["url"], key: decode_entities(r["key"]["shortName"]), bpm: r["bpm"], artist: collect_artists(r["artists"]), title: r["title"], track_id: r["id"]}), :method => :post)
+            %a.favorite fav
+            -# = link_to('fav', favorites_path(favorite: {image_url: r["images"]["large"]["url"], key: decode_entities(r["key"]["shortName"]), bpm: r["bpm"], artist: collect_artists(r["artists"]), title: r["title"], track_id: r["id"]}), :method => :post)
     = paginate @results
 

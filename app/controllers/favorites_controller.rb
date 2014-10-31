@@ -4,11 +4,9 @@ class FavoritesController < ApplicationController
   end
 
   def create
-    @favorites = current_user.favorites.build(favorite_params)
-    if @favorites.save
-      flash[:success] = "Added to your favorites list!"
-      redirect_to user_url(current_user)
-    end
+    @favorites = current_user.favorites.build(image_url: image_url, key: key, bpm: bpm, artist: artist, title: title, track_id: track_id)
+    @favorites.save
+    render :layout => false
   end
 
   def destroy
