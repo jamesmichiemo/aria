@@ -1,11 +1,11 @@
-%div.g-b.g-b--l--1of12
-  %h1.tac Avalon
+%div.g-b.g-b--l--2of12
+  %h1 Avalon
   %ul
   - if user_signed_in?
     %li
       = current_user.username ? current_user.username : current_user.name
     %li
-      = link_to "favorites", favorites_path(current_user)
+      = link_to "#{icon('smile-o')} favorites".html_safe, favorites_path(current_user)
     %li
       = link_to 'Sign out', signout_path
   - else
