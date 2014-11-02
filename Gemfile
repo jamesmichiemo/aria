@@ -6,6 +6,7 @@ gem 'json', '1.8.1'
 gem 'oauth', '0.4.7'
 gem 'htmlentities', '4.3.1'
 gem 'kaminari', '~> 0.16.1'
+gem 'font-awesome-sass', '~> 4.2.0'
 
 group :development, :test do
   gem 'rspec-rails'
