@@ -3,7 +3,7 @@
 %div.row.row--c
   %div.g-b.g-b--l--11of12.g-b--center
     %h3
-      = "#{current_user.favorites.count} favorites"
+      = "#{current_user.favorites.count} favorite".pluralize(current_user.favorites.count) 
     = paginate @favorites
     %ul
       = render @favorites
