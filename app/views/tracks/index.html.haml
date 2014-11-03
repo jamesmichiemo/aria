@@ -16,8 +16,6 @@
           .mtm.g-b
             = audio_tag("http://geo-samples.beatport.com/lofi/#{r["id"]}.LOFI.mp3", controls: true, preload: false)
             = button_to('', track_path(id: r["id"], key: decode_entities(r["key"]["shortName"]))) unless r["key"].nil?
-            %a.favorite
-              = icon('smile-o')
             -# = link_to('fav', favorites_path(favorite: {image_url: r["images"]["large"]["url"], key: decode_entities(r["key"]["shortName"]), bpm: r["bpm"], artist: collect_artists(r["artists"]), title: r["title"], track_id: r["id"]}), :method => :post)
     = paginate @results
 
