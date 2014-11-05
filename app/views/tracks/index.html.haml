@@ -13,9 +13,11 @@
           .artists.mts.g-b.g-b--l--7of12
             = collect_artists(r["artists"])
           .title.mts.g-b.g-b--l--7of12= r["title"]
-          .mtm.g-b
+          .player.mtm.g-b
             = audio_tag("http://geo-samples.beatport.com/lofi/#{r["id"]}.LOFI.mp3", controls: true, preload: false)
             = button_to('', track_path(id: r["id"], key: decode_entities(r["key"]["shortName"]))) unless r["key"].nil?
-            -# = link_to('fav', favorites_path(favorite: {image_url: r["images"]["large"]["url"], key: decode_entities(r["key"]["shortName"]), bpm: r["bpm"], artist: collect_artists(r["artists"]), title: r["title"], track_id: r["id"]}), :method => :post)
+            = link_to(icon('smile-o'), favorites_path(favorite: {image_url: r["images"]["large"]["url"], key: decode_entities(r["key"]["shortName"]), bpm: r["bpm"], artist: collect_artists(r["artists"]), title: r["title"], track_id: r["id"]}), :method => :post, remote: true, class: 'favorite') unless current_user.favorites.exists?(title: r["title"])
+            = link_to(icon('frown-o'), Favorite.find_by(r["track_id"]), remote: true, method: :delete, class: 'unfavorite') if current_user.favorites.exists?(title: r["title"])
+
     = paginate @results
 

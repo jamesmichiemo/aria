@@ -10,5 +10,5 @@
   .mtm.g-b
     = audio_tag("http://geo-samples.beatport.com/lofi/#{favorite.track_id}.LOFI.mp3", controls: true, preload: false)
     = button_to('', track_path(id: favorite.track_id, key: favorite.key))
-    = link_to('destroy', favorite, method: :delete, data: { confirm: 'sure?' }, title: favorite.title)
+    = link_to('destroy', favorite, remote: true, method: :delete, data: { confirm: 'sure?' }, title: favorite.title)
 
