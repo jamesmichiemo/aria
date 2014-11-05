@@ -14,7 +14,7 @@ class FavoritesController < ApplicationController
   def destroy 
     @favorite = current_user.favorites.find_by(id: params[:id])
     @favorite.destroy
-    render :layout => false
+    redirect_to favorites_path
   end
 
   private

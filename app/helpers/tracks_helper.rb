@@ -189,5 +189,13 @@ module TracksHelper
       true
     end
   end
+
+  def favorited(string)
+    if current_user.favorites.exists?(title: string)
+      true
+    else
+      false
+    end
+  end
 end
 

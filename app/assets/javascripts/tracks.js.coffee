@@ -1,10 +1,11 @@
 $('.button_to').hide()
 $('.results').on 'click', (event) ->
   $(this).find('.button_to').trigger("submit") if $(event.target).hasClass('results')
-$('.favorite').on "click", (event) ->
+$('.favorited').on "click", (event) ->
   $(this).hide()
-  $('.unfavorite').show()
-$('.unfavorite').on "click", (event) ->
+  $(this).siblings('.unfavorited').show()
+$('.unfavorited').on "click", (event) ->
   $(this).hide()
-  $('.favorite').show()
-
+  $(this).siblings('.favorited').show()
+$('.favorited.saved').on "click", (event) ->
+  $(this).closest('.favorite').fadeOut("slow")
