@@ -1,3 +1,8 @@
+$ ->
+  $(window).scroll ->
+    if $(window).scrollTop() > $(document).height() - $(window).height() - 50
+      alert "started from the top and now we're here"
+
 $('.button_to').hide()
 $('.results').on 'click', (event) ->
   $(this).find('.button_to').trigger("submit") if $(event.target).hasClass('results')
