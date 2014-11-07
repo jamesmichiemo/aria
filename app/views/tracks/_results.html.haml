@@ -1,0 +1,15 @@
+%ul.result
+  %li.result.pam.mbl.g-b{:id => result["id"]}
+    .mlxs.artcover
+      = image_tag result["images"]["large"]["url"], :height => "130", :width => "130"
+    .key.g-b.g-b--l--1of12= decode_entities(result["key"]["shortName"]) unless result["key"].nil?
+    .bpm.g-b.g-b--l--1of12= result["bpm"]
+    .artists.mts.g-b.g-b--l--7of12
+      = collect_artists(result["artists"])
+    .title.mts.g-b.g-b--l--7of12= result["title"]
+    .player.mtm.g-b
+      = audio_tag("http://geo-samples.beatport.com/lofi/#{result["id"]}.LOFI.mp3", controls: true, preload: false)
+      = button_to('', track_path(id: result["id"], key: decode_entities(result["key"]["shortName"]))) unless result["key"].nil?
+      = favorited(result["title"]) ? link_to( icon('frown-o'), Favorite.find_by(title: result["title"]), remote: true, :method => :delete, class: 'unfavorited') : link_to(icon('smile-o'), favorites_path(favorite: {image_url: result["images"]["large"]["url"], key: decode_entities(result["key"]["shortName"]), bpm: result["bpm"], artist: collect_artists(result["artists"]), title: result["title"], track_id: result["id"]}), remote: true, :method => :post, class: 'favorited')
+      = !favorited(result["title"]) ? link_to( icon('frown-o'), Favorite.find_by(title: result["title"]), remote: true, :method => :delete, class: 'unfavorited', style: 'display: none') : link_to(icon('smile-o'), favorites_path(favorite: {image_url: result["images"]["large"]["url"], key: decode_entities(result["key"]["shortName"]), bpm: result["bpm"], artist: collect_artists(result["artists"]), title: result["title"], track_id: result["id"]}), remote: true, :method => :post, class: 'favorited', style: 'display: none')
+
