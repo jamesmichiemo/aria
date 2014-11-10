@@ -1,0 +1,9 @@
+$('ul.page').append('<%= escape_javascript render(:partial => 'result', :collection => @results) %>');
+
+<% if @results.current_page < @results.num_pages %>
+  $('.pagination').replaceWith('<%= j paginate(@results) %>');
+  console.log('next');
+<% else %>
+  $('.pagination').remove();
+<% end %>
+<% sleep 1 %>

@@ -4,7 +4,8 @@
 
 
 
-;(function( $, window, document, undefined )
+;
+$.fn.ozPlayer = function( $, window, document, undefined )
 {
 	var isTouch		  = 'ontouchstart' in window,
 		eStart		  = isTouch ? 'touchstart'	: 'mousedown',
@@ -24,6 +25,7 @@
 
 	$.fn.audioPlayer = function( params )
 	{
+    console.log('params');
 		var params		= $.extend( { classPrefix: 'audioplayer', strPlay: 'Play', strPause: 'Pause', strVolume: 'Volume' }, params ),
 			cssClass	= {},
 			cssClassSub =
@@ -78,7 +80,9 @@
 			if( isSupport )
 			{
 				thePlayer.find( 'audio' ).css( { 'width': 0, 'height': 0, 'visibility': 'hidden' } );
-				thePlayer.append( '<div class="' + cssClass.bar + '"><div class="' + cssClass.barLoaded + '"></div><div class="' + cssClass.barPlayed + '"></div></div></div><div class="' + cssClass.volume + '"><div class="' + cssClass.volumeButton + '" title="' + params.strVolume + '"><a href="#">' + params.strVolume + '</a></div><div class="' + cssClass.volumeAdjust + '"><div><div></div></div></div></div>' );
+				  
+          thePlayer.append( '<div class="' + cssClass.bar + '"><div class="' + cssClass.barLoaded + '"></div><div class="' + cssClass.barPlayed + '"></div></div></div><div class="' + cssClass.volume + '"><div class="' + cssClass.volumeButton + '" title="' + params.strVolume + '"><a href="#">' + params.strVolume + '</a></div><div class="' + cssClass.volumeAdjust + '"><div><div></div></div></div></div>' );
+        
 
 				var theBar			  = thePlayer.find( '.' + cssClass.bar ),
 					barPlayed	 	  = thePlayer.find( '.' + cssClass.barPlayed ),
@@ -200,4 +204,5 @@
 		});
 		return this;
 	};
-})( jQuery, window, document );
+};
+$.fn.ozPlayer( jQuery, window, document );
