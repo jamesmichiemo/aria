@@ -1,0 +1,15 @@
+- if affinity?(encode_key(decode_entities(affinite_result["key"]["shortName"])).first, encode_key(decode_entities(affinite_result["key"]["shortName"])).last, encode_key(decode_entities(@track_key)).first, encode_key(decode_entities(@track_key)).last)
+  %li.result.pam.mbl.g-b
+    .mlxs.artcover
+      = image_tag affinite_result["images"]["large"]["url"], :height => "130", :width => "130"
+    .key.g-b.g-b--l--1of12= decode_entities(affinite_result["key"]["shortName"])
+    .bpm.g-b.g-b--l--1of12= affinite_result["bpm"]
+    .mts.g-b.g-b--l--7of12
+      = collect_artists(affinite_result["artists"])
+    .mts.g-b.g-b--l--7of12= affinite_result["title"]
+    .player.mtm.g-b
+      = audio_tag("http://geo-samples.beatport.com/lofi/#{affinite_result["id"]}.LOFI.mp3", controls: true, preload: false)
+      = button_to('', track_path(id: affinite_result["id"], key: decode_entities(affinite_result["key"]["shortName"])))
+      = favorited(affinite_result["title"]) ? link_to( icon('frown-o'), Favorite.find_by(title: affinite_result["title"]), remote: true, :method => :delete, class: 'unfavorited') : link_to(icon('smile-o'), favorites_path(favorite: {image_url: affinite_result["images"]["large"]["url"], key: decode_entities(affinite_result["key"]["shortName"]), bpm: affinite_result["bpm"], artist: collect_artists(affinite_result["artists"]), title: affinite_result["title"], track_id: affinite_result["id"]}), remote: true, :method => :post, class: 'favorited')
+      = !favorited(affinite_result["title"]) ? link_to( icon('frown-o'), Favorite.find_by(title: affinite_result["title"]), remote: true, :method => :delete, class: 'unfavorited', style: 'display: none') : link_to(icon('smile-o'), favorites_path(favorite: {image_url: affinite_result["images"]["large"]["url"], key: decode_entities(affinite_result["key"]["shortName"]), bpm: affinite_result["bpm"], artist: collect_artists(affinite_result["artists"]), title: affinite_result["title"], track_id: affinite_result["id"]}), remote: true, :method => :post, class: 'favorited', style: 'display: none')
+

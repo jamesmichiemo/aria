@@ -1,23 +1,8 @@
 = render 'layouts/shared/sidebar'
 
 %div.row.row--c
-  %div.g-b.g-b--l--11of12.g-b--center
-    = paginate @results
-    %ul
-      - @results.each do |r|
-        - if affinity?(encode_key(decode_entities(r["key"]["shortName"])).first, encode_key(decode_entities(r["key"]["shortName"])).last, encode_key(decode_entities(@track_key)).first, encode_key(decode_entities(@track_key)).last)
-          %li.results.pam.mbl.g-b
-            .mlxs.artcover
-              = image_tag r["images"]["large"]["url"], :height => "130", :width => "130"
-            .key.g-b.g-b--l--1of12= decode_entities(r["key"]["shortName"])
-            .bpm.g-b.g-b--l--1of12= r["bpm"]
-            .mts.g-b.g-b--l--7of12
-              = collect_artists(r["artists"])
-            .mts.g-b.g-b--l--7of12= r["title"]
-            .player.mtm.g-b
-              = audio_tag("http://geo-samples.beatport.com/lofi/#{r["id"]}.LOFI.mp3", controls: true, preload: false)
-              = button_to('', track_path(id: r["id"], key: decode_entities(r["key"]["shortName"])))
-              = favorited(r["title"]) ? link_to( icon('frown-o'), Favorite.find_by(title: r["title"]), remote: true, :method => :delete, class: 'unfavorited') : link_to(icon('smile-o'), favorites_path(favorite: {image_url: r["images"]["large"]["url"], key: decode_entities(r["key"]["shortName"]), bpm: r["bpm"], artist: collect_artists(r["artists"]), title: r["title"], track_id: r["id"]}), remote: true, :method => :post, class: 'favorited')
-              = !favorited(r["title"]) ? link_to( icon('frown-o'), Favorite.find_by(title: r["title"]), remote: true, :method => :delete, class: 'unfavorited', style: 'display: none') : link_to(icon('smile-o'), favorites_path(favorite: {image_url: r["images"]["large"]["url"], key: decode_entities(r["key"]["shortName"]), bpm: r["bpm"], artist: collect_artists(r["artists"]), title: r["title"], track_id: r["id"]}), remote: true, :method => :post, class: 'favorited', style: 'display: none')
-    = paginate @results
+  %div#results.g-b.g-b--l--11of12.g-b--center
+    %ul.page
+      = render partial: 'affinite_result', collection: @affinite_results
+    = paginate @affinite_results
 
