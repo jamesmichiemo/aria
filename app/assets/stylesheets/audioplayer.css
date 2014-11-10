@@ -305,4 +305,7 @@
 		-o-transition: color .25s ease, background-color .25s ease, opacity .5s ease;
 		transition: color .25s ease, background-color .25s ease, opacity .5s ease;
 	}
-
+.audioplayer .audioplayer
+{
+  display: none;
+}
