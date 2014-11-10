@@ -20,7 +20,7 @@ class TracksController < ApplicationController
     @consumer = OAuth::Consumer.new(ENV['OMNIAUTH_PROVIDER_KEY'], ENV['OMNIAUTH_PROVIDER_SECRET'], {:site=>ENV['OAUTH_CONSUMER_SITE']})
     @accesstoken = OAuth::AccessToken.new(@consumer, session[:token], session[:secret])
     @similar_tracks = JSON.parse(@accesstoken.get("https://oauth-api.beatport.com/catalog/3/tracks/similar?id=#{URI.encode(params[:id])}&perPage=20").body)
-    @results = Kaminari.paginate_array(@similar_tracks["results"].to_a.delete_if {|key, value| key["type"] !="track" }).page(params[:page]).per(15)
+    @affinite_results = Kaminari.paginate_array(@similar_tracks["results"].to_a.delete_if {|key, value| key["type"] !="track" }).page(params[:page]).per(15)
     @track_key = params[:key]
   end
 
