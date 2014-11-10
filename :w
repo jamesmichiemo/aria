@@ -74,7 +74,7 @@ $.fn.ozPlayer = function( $, window, document, undefined )
 			}
 			else if( canPlayType( audioFile ) ) isSupport = true;
 
-			var thePlayer = $( '<div class="' + params.classPrefix + '">' + ( isSupport ? $( '<div>' ).append( $this.eq( 0 ).clone() ).html() : '<embed src="' + audioFile + '" width="0" height="0" volume="100" autostart="' + isAutoPlay.toString() +'" loop="' + isLoop.toString() + '" />' ) + '<div class="' + cssClass.playPause + '" title="' + params.strPlay + '"><a href="#">' + params.strPlay + '</a></div></div>' ),
+			var thePlayer = $( '<div class="' + params.classPrefix + '">' + ( isSupport  ? $( '<div>' ).append( $this.eq( 0 ).clone() ).html() : '<embed src="' + audioFile + '" width="0" height="0" volume="100" autostart="' + isAutoPlay.toString() +'" loop="' + isLoop.toString() + '" />' ) + '<div class="' + cssClass.playPause + '" title="' + params.strPlay + '"><a href="#">' + params.strPlay + '</a></div></div>' ),
 				theAudio  = isSupport ? thePlayer.find( 'audio' ) : thePlayer.find( 'embed' ), theAudio = theAudio.get( 0 );
 
 			if( isSupport )
@@ -105,8 +105,8 @@ $.fn.ozPlayer = function( $, window, document, undefined )
 					updateLoadBar = setInterval( function()
 					{
 						barLoaded.width( ( theAudio.buffered.end( 0 ) / theAudio.duration ) * 100 + '%' );
-						// if( theAudio.buffered.end( 0 ) >= theAudio.duration )
-						// 	clearInterval( updateLoadBar );
+						if( theAudio.buffered.end( 0 ) >= theAudio.duration )
+							clearInterval( updateLoadBar );
 					}, 100 );
 
 				var volumeTestDefault = theAudio.volume, volumeTestValue = theAudio.volume = 0.111;
@@ -204,16 +204,10 @@ $.fn.ozPlayer = function( $, window, document, undefined )
 		});
 		return this;
 	};
-  var deferred = $.Deferred();
-
-  setTimeout(function(){
-    deferred.resolve("wait for the drop");
-  }, 1000);
-
-  return deferred.promise();
 };
-
-$.when( $.fn.ozPlayer($, window, document) ).done(function(value) {
-  $('.audioplayer .audioplayer').remove();
-});
+$.fn.ozPlayer( jQuery, window, document );
+$.when($.fn.ozPlayer( jQuery, window, document )).done(function(){
+  $('.audioplayer .audioplayer').hide();
+  console.log 'where they at'
+})
 
