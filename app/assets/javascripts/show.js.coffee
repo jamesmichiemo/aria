@@ -1,4 +1,3 @@
-console.log 'show'
 $('.button_to').hide()
 $('.result').on 'click', (event) ->
   $(this).find('.button_to').trigger("submit") if $(event.target).hasClass('result')
