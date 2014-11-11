@@ -1,0 +1,9 @@
+$('ul.page').append('<%= escape_javascript render(@favorites) %>');
+
+<% if @favorites.current_page < @favorites.num_pages %>
+  $('.pagination').replaceWith('<%= j paginate(@favorites) %>');
+  console.log('next');
+<% else %>
+  $('.pagination').remove();
+<% end %>
+<% sleep 1 %>

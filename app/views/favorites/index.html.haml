@@ -4,8 +4,7 @@
   %div.g-b.g-b--l--11of12.g-b--center
     %h3
       = "#{current_user.favorites.count} favorite".pluralize(current_user.favorites.count) 
-    = paginate @favorites
-    %ul
-      = render @favorites
+    %ul.page
+      = render partial: 'favorite', collection: @favorites
     = paginate @favorites
 
