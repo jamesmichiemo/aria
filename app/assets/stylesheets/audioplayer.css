@@ -141,19 +141,19 @@
 		}
 		.audioplayer-bar-played
 		{
-			background: #007fd1;
-			background: -webkit-gradient( linear, left top, right top, from( #007fd1 ), to( #c600ff ) );
-			background: -webkit-linear-gradient( left, #007fd1, #c600ff );
-			background: -moz-linear-gradient( left, #007fd1, #c600ff );
-			background: -ms-radial-gradient( left, #007fd1, #c600ff );
-			background: -o-linear-gradient( left, #007fd1, #c600ff );
-			background: linear-gradient( left, #007fd1, #c600ff );
+			background: #00b09d;
+			background: -webkit-gradient( linear, left top, right top, from( #00b09d ), to( #ff4294 ) );
+			background: -webkit-linear-gradient( left, #00b09d, #ff4294 );
+			background: -moz-linear-gradient( left, #00b09d, #ff4294 );
+			background: -ms-radial-gradient( left, #00b09d, #ff4294 );
+			background: -o-linear-gradient( left, #00b09d, #ff4294 );
+			background: linear-gradient( left, #00b09d, #ff4294 );
 			z-index: 2;
 		}
 	.audioplayer-volume
 	{
 		width: 2.5em;
-		height: 100%;
+		height: 102%;
 		border-left: 1px solid #111;
 		border-left-color: rgba( 0, 0, 0, .25 );
 		text-align: left;
@@ -182,7 +182,7 @@
 				position: relative;
 				z-index: 1;
 				top: 40%;
-				left: 35%;
+				left: 30%;
         border: none;
 			}
 				.audioplayer-volume-button a:before,
@@ -261,13 +261,13 @@
 					position: absolute;
 					bottom: 0;
 					left: 0;
-					background: #007fd1;
-					background: -webkit-gradient( linear, left bottom, left top, from( #007fd1 ), to( #c600ff ) );
-					background: -webkit-linear-gradient( bottom, #007fd1, #c600ff );
-					background: -moz-linear-gradient( bottom, #007fd1, #c600ff );
-					background: -ms-radial-gradient( bottom, #007fd1, #c600ff );
-					background: -o-linear-gradient( bottom, #007fd1, #c600ff );
-					background: linear-gradient( bottom, #007fd1, #c600ff );
+					background: #00b09d;
+					background: -webkit-gradient( linear, left bottom, left top, from( #00b09d ), to( #ff4294 ) );
+					background: -webkit-linear-gradient( bottom, #00b09d, #ff4294 );
+					background: -moz-linear-gradient( bottom, #00b09d, #ff4294 );
+					background: -ms-radial-gradient( bottom, #00b09d, #ff4294 );
+					background: -o-linear-gradient( bottom, #00b09d, #ff4294 );
+					background: linear-gradient( bottom, #00b09d, #ff4294 );
 				}
 		.audioplayer-novolume .audioplayer-volume
 		{

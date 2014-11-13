@@ -73,15 +73,14 @@ a.favorited, a.unfavorited
   border-left: 2px solid $c-text-invert
   color: white
   display: block 
-  height: 100%
-  line-height: 2.375em
+  height: 101%
+  line-height: 2.5em
   margin-left: 2.5em
+  position: relative
   text-align: center
   text-decoration: none
-  position: relative
-  top: -2.5em
+  top: -2.6em
   width: 2.5em
-  height: 100%
   z-index: 1000
   &:hover
     border-bottom: none
@@ -101,11 +100,11 @@ a.favorited, a.unfavorited
   width: 97.5%
 
 html
-  background: -webkit-linear-gradient(90deg, #616161 10%, #9bc5c3 90%) // Chrome 10+, Saf5.1+
-  background:    -moz-linear-gradient(90deg, #616161 10%, #9bc5c3 90%) // FF3.6+
-  background:     -ms-linear-gradient(90deg, #616161 10%, #9bc5c3 90%) // IE10
-  background:      -o-linear-gradient(90deg, #616161 10%, #9bc5c3 90%) // Opera 11.10+
-  background:         linear-gradient(90deg, #616161 10%, #9bc5c3 90%) // W3C
+  background: -webkit-linear-gradient(90deg, #232526 10%, #414345 90%) /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #232526 10%, #414345 90%) /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #232526 10%, #414345 90%) /* IE10 */
+  background:      -o-linear-gradient(90deg, #232526 10%, #414345 90%) /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #232526 10%, #414345 90%) /* W3C */
 
 i
   vertical-align: middle
@@ -136,12 +135,11 @@ li.result
   height: 60px
 
 .search-icon
+  background: white url(http://i.imgur.com/lFkqn.png) left center no-repeat
+  border: 1px solid #ccc
+  color: $c-text
   font-size: 2em
   height: 80px
-  position: relative
   padding: 8px 5px 8px 30px
-  border: 1px solid #ccc
-  background: white url(http://i.imgur.com/lFkqn.png) left center no-repeat
-  color: $c-text
-
+  position: relative
 
