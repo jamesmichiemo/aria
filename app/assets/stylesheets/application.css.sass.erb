@@ -68,10 +68,19 @@
 //   Inbox
 // -------------------------------------
 
+h1#logo
+  padding-top: 40px
+  font-size: 3em
+  a
+    color: #fff
+    &:hover
+      border-bottom: none
+
+
 a.favorited, a.unfavorited
   border-bottom: none
   border-left: 2px solid $c-text-invert
-  color: white
+  color: #fff 
   display: block 
   height: 101%
   line-height: 2.5em
@@ -95,9 +104,7 @@ a.favorited, a.unfavorited
 .bpm, .key
   float: right
   text-align: center
-
-.form-input
-  width: 97.5%
+  font-size: 1.2em
 
 html
   background: -webkit-linear-gradient(90deg, #232526 10%, #414345 90%) /* Chrome 10+, Saf5.1+ */
@@ -119,10 +126,14 @@ li.result
   -webkit-border-radius: 4px 4px 4px 4px
   border: 2px solid $c-text-invert
   color: white
+  margin-left: -20px
   &:hover
     cursor: pointer
   &:hover > *
     cursor: text
+
+.pagination
+  float: left
 
 @media (max-width: 1019px)
   .artcover
@@ -139,7 +150,7 @@ li.result
   color: $c-text
   font-size: 2em
   height: 80px
-  padding: 8px 5px 8px 30px
+  padding: 8px 0 8px 0
   position: relative
 
 h1.splash 
@@ -168,9 +179,12 @@ div.signin
   a
     color: #fff
     border-bottom: #fff
-@media (max-width: 400px)
+@media (max-width: 600px)
   div.signin
     top: 320px
+  .sidebar
+    text-align: center
+    padding: 0
 
 div.desc
   border-radius: 4px 4px 4px 4px
