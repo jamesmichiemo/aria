@@ -130,7 +130,6 @@ li.result
     img
       display: block
       margin: 0 auto
-
 .player
   height: 60px
 
@@ -143,3 +142,62 @@ li.result
   padding: 8px 5px 8px 30px
   position: relative
 
+h1.splash 
+  position: absolute
+  top: 60px
+  width: 210px
+  font-size: 4em
+  padding: 20px 40px
+  background-color: #2e2e2e
+  filter: blur(0)
+  border-radius: 4px 4px 4px 4px
+  -moz-border-radius: 4px 4px 4px 4px
+  -webkit-border-radius: 4px 4px 4px 4px
+
+div.signin
+  border-radius: 4px 4px 4px 4px
+  -moz-border-radius: 4px 4px 4px 4px
+  -webkit-border-radius: 4px 4px 4px 4px
+  position: absolute
+  top: 500px
+  width: 105px
+  font-size: 1.5em
+  padding: 10px 20px
+  background-color: #2e2e2e
+  filter: blur(0)
+  a
+    color: #fff
+    border-bottom: #fff
+@media (max-width: 400px)
+  div.signin
+    top: 320px
+
+div.desc
+  border-radius: 4px 4px 4px 4px
+  -moz-border-radius: 4px 4px 4px 4px
+  -webkit-border-radius: 4px 4px 4px 4px
+  position: absolute
+  font-size: 1.5em
+  padding: 10px 20px
+  background-color: #2e2e2e
+  filter: blur(0)
+  top: 200px
+  p
+    margin-bottom: 0
+
+div.splash
+  background-image: url("collage.jpg")
+  background-size: cover
+  display: block
+  filter: blur(1px) sepia(40%)
+  -webkit-filter: brightness(20%)
+  height: 800px
+  left: 0
+  position: fixed
+  right: 0
+  z-index: 0
+
+.register
+  font-size: .5em
+  &:hover
+    border-bottom: 1px solid #fff

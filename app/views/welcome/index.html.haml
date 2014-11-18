@@ -1,0 +1,27 @@
+!!! 5
+%html{ lang: 'en' }
+%head
+  %title= "Avalon Simple Search"
+  = yield(:meta_content)
+  %meta{ :name => 'viewport', :content => 'width=device-width, initial-scale=1' }
+  = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Merriweather:400,300,700,400italic'
+  = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700'
+  = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic'
+  = stylesheet_link_tag 'http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css'
+  = stylesheet_link_tag 'application'
+  = csrf_meta_tags
+%body
+  %div.splash
+  %div
+    %div
+      %h1.splash Avalon
+
+    %div.desc
+      %p
+        = "Discover new music harmonically."
+
+    %div.signin
+      = link_to 'Sign in >>', signin_path, :class => 'splash'
+      .register= link_to 'Not Registered?', 'https://www.beatport.com/registration', :class => 'splash'
+  = javascript_include_tag 'application'
+

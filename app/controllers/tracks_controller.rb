@@ -6,6 +6,7 @@ class TracksController < ApplicationController
     @accesstoken = OAuth::AccessToken.new(@consumer, session[:token], session[:secret])
     @tracks = JSON.parse(@accesstoken.get('https://oauth-api.beatport.com/catalog/3/most-popular').body)
     @results = Kaminari.paginate_array(@tracks["results"].to_a).page(params[:page]).per(10)
+    redirect_to :welcome_index unless user_signed_in? 
   end
 
   def search

@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root :to => 'tracks#index'
-  resources :tracks
+  resources :tracks, :welcome
   resources :favorites, :only => [:index, :create, :destroy]
   post 'tracks/:id', to: 'tracks#show'
   match 'search', to: 'tracks#search', via: [:get, :post]
