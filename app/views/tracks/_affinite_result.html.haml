@@ -1,4 +1,4 @@
-- if affinity?(encode_key(decode_entities(affinite_result["key"]["shortName"])).first, encode_key(decode_entities(affinite_result["key"]["shortName"])).last, encode_key(decode_entities(@track_key)).first, encode_key(decode_entities(@track_key)).last)
+- if affinity?(encode_key(affinite_result["key"]["shortName"]), encode_key(@track_key))
   %li.result.pam.mbl.g-b
     .mlxs.artcover
       = image_tag affinite_result["images"]["large"]["url"], :height => "130", :width => "130"

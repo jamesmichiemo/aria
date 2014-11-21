@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
-ruby '2.1.4'
+ruby '2.1.5'
+#ruby-gemset=aria
+
 gem 'haml-rails', '0.5.3'
 gem 'omniauth-oauth', '1.0.1'
 gem 'json', '1.8.1'

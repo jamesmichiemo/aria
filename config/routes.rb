@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
-  root :to => 'tracks#index'
-  resources :tracks, :welcome
-  resources :favorites, :only => [:index, :create, :destroy]
-  post 'tracks/:id', to: 'tracks#show'
-  match 'search', to: 'tracks#search', via: [:get, :post]
-  get '/auth/:provider/callback' => 'sessions#create'
-  get '/signin' => 'sessions#new', :as => :signin
-  get '/signout' => 'sessions#destroy', :as => :signout
-  get '/auth/failure' => 'sessions#failure'
+  # resources :tracks
+  # resources :welcome
+  # resources :favorites, :only => [:index, :create, :destroy]
+  # match 'search', to: 'tracks#search', via: [:get, :post]
+  # get '/auth/:provider/callback' => 'sessions#create'
+  # get '/auth/failure' => 'sessions#failure'
+  # get '/signin' => 'sessions#new', :as => :signin
+  # get '/signout' => 'sessions#destroy', :as => :signout
+  # root :to => 'tracks#index'
 end
