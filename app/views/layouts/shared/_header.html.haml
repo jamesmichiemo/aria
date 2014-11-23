@@ -1,4 +1,4 @@
 %header.header
   %div.mas= "Discover music harmonically."
   = form_tag(controller: "tracks", action: "search", method: "get", class: "form form--search") do
-    = search_field_tag :query, params[:query], class: "form-input search-icon", placeholder: "    Search Artist, Label, or Track and press the ENTER key."
+    = search_field_tag :query, params[:query], class: "form-input search-icon", placeholder: "Search Artist, Label, or Track and press the ENTER key."
