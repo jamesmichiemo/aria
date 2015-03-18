@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.1.4'
+
 gem 'haml-rails', '0.5.3'
 gem 'omniauth-oauth', '1.0.1'
 gem 'json', '1.8.1'
@@ -10,6 +10,13 @@ gem 'font-awesome-sass', '~> 4.2.0'
 
 group :development, :test do
   gem 'rspec-rails'
+  gem 'rspec-its'
+  gem 'capybara'
+  gem 'database_cleaner', '~> 1.4.1'
+  gem 'guard-rspec'
+  gem 'launchy'
+  gem 'capybara-webkit'
+  gem 'faker'
 end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
